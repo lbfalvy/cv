@@ -1,6 +1,8 @@
-import Body from './body'
 import ReactDOM from 'react-dom'
 import React from 'react'
+import { Body } from './body'
+import { Options } from './Options'
+import './index.scss'
 
 function getRoot() {
     const old = document.getElementById('root')
@@ -11,4 +13,7 @@ function getRoot() {
     return root
 }
 
-ReactDOM.render(<Body />, getRoot())
+ReactDOM.render(<>
+    <Options />
+    <Body />
+</>, getRoot())

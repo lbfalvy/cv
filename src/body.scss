@@ -1,83 +1,26 @@
-@use 'sass:math';
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
-@import './right-label.scss';
-@import './timeline.scss';
+@import './a4.scss';
 
-@mixin a4 {
-    margin: 0;
-    padding: 0;
-    @media screen {
-        width: 21cm;
-        height: 29.7cm;
-    }
-    @media print {
-        width: 100vw;
-        height: 100vh;
-    }
-    // width: 21.6cm;
-    // height: 30.3cm;
-    box-sizing: border-box;
-    overflow: hidden;
-}
-
-// html {
-//     @include a4;
-// }
-
-html {
-    background-color: black;
-    overflow: scroll;
-    box-sizing: content-box;
-}
-
-body {
+.Body {
     position: relative;
     background: white;
     @include a4;
+    font-family: sans-serif;
+    $head-bg: #333;
+
+    // General rules
     a {
         color: #559;
         text-decoration: none;
         font-style: unset;
     }
-    h1, h2 {
-        font-family: 'Oswald', sans-serif;
-        text-transform: uppercase;
-        margin: 0; padding: 0;
-        margin-left: 5px;
-    }
-    dl {
-        margin-top: 0px;
-        margin-bottom: 5px;
-        dd, dt { display: inline; }
-    }
-    .tags {
-        margin: 0;
-        padding: 0;
-        li, dt {
-            list-style: none;
-            display: inline;
-            font-size: .9em;
-            padding: 2px .5em;
-            margin-right: 5px;
-            background-color: #79a;
-            color: white;
-            border-radius: 10000px;
-        }
-    }
-    dl.tags {
-        dd {
-            margin: 0;
-            &::before {
-                content: ' -- ';
-            }
-        }
-    }
+
     p {
         margin: 0;
         margin-bottom: .5em;
     }
 
-    $head-bg: #333;
+    // Leftover rules for sections
     .header {
         padding: 10px 30px;
         background: $head-bg;
@@ -90,10 +33,16 @@ body {
         address:not(:last-of-type) { padding-right: 10px; }
         address:not(:first-of-type) { padding-left: 10px; }
         a { color: inherit; }
+        h1 {
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+            margin: 0;
+            padding: 0;
+            margin-left: 5px;
+        }
     }
     .personal {
-        $bg: #eef;
-        background: $bg;
+        background: #eef;
         padding: 10px 0;
         font-size: .8em;
         dl {
@@ -103,7 +52,7 @@ body {
             margin: 0;
             dt, dd, &::after, &::before {
                 display: inline-block;
-                border: 2px solid $bg;
+                border: 2px solid transparent;
                 border-left-width: 1px; border-right-width: 1px;
             }
             dt, &::after {
@@ -132,102 +81,42 @@ body {
             }
         }
     }
-    .experience {
-        background: #fff;
-        article {
-            $head-height: 1.2em;
-            @include timeline(10px, 2px, 10px, $head-bg, math.div($head-height, 2));
-            header {
-                display: inline-block;;
-                background: #ddf;
-                @include right-label($head-height);
-                line-height: $head-height;
-                .details, .project, .role, .employer {
-                    display: inline-block;
-                    &:not(:first-child) {
-                        padding-left: 10px;
-                        border-left: 1px solid black;
-                    }
-                    padding-right: 10px;
-                }
-                .details {
-                    color: #666;
-                }
-                .project {
-                    font-family: 'Oswald', sans-serif;
-                    font-size: .75em;
-                    text-transform: uppercase;
-                    color: black;
-                    letter-spacing: 1px;
-                    font-weight: 600;
-                }
-                .role { font-weight: 700; }
-                .employer {
-                    font-style: italic;
-                    color: #666;
-                }
-            }
-            .description {
-                padding-bottom: 10px;
-            }
-        }
-    }
     .education {
-        background: #fbfbfb;
-        article {
-            $head-height: 2.5em;
-            @include timeline(10px, 2px, 10px, $head-bg, math.div($head-height, 2));
+        padding-right: 0;
+        main > article {
             header {
-                display: inline-block;
-                background-color: #ddf;
-                @include right-label($head-height);
-                height: $head-height;
-                .details {
-                    color: #666;
-                    .location {
-                        color: black;
-                        font-style: oblique;
-                    }
+                border-top-left-radius: 1000px;
+                border-bottom-left-radius: 1000px;
+                background-color: white;
+                display: grid;
+                grid-template-columns: max-content auto;
+                grid-template-areas:
+                    'name duration'
+                    'name institute';
+                h3 {
+                    grid-area: name;
+                    padding: 5px 10px;
+                    padding-top: calc(8px);
+                    margin: 0;
                 }
-                .award {
-                    display: inline-block;
-                    font-weight: 600;
-                    padding-right: 10px;
+                .duration {
+                    grid-area: duration;
                 }
                 .institute {
-                    display: inline-block;
-                    padding-left: 10px;
-                    border-left: 1px solid black;
-                    font-style: italic;
-                    color: #666;
+                    grid-area: institute;
                 }
             }
-            .description {
-                padding-bottom: 5px;
-                padding-left: math.div($head-height, 2);
-                table.results {
-                    border-collapse: collapse;
-                    td {
-                        padding: 0 1ch;
-                        &:first-child {
-                            border-left: 1px solid black;
-                        }
-                        border-right: 1px solid black;
-                    }
+            main {
+                // padding-bottom: 5px;
+                & > p:last-child {
+                    margin-bottom: 0;
                 }
             }
         }
-    }
-    .languages, .foss {
-        background: #eef;
-        padding: 10px;
-    }
-    .skills {
-        padding: 10px;
     }
     .this-cv {
         padding: 10px 30px;
-        background-color: $head-bg;
+        background-color: $head-bg !important;
         color: white;
         position: absolute;
         display: block;

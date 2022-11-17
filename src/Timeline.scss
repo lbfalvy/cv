@@ -1,0 +1,58 @@
+@use 'sass:math';
+
+.Timeline {
+    --head-height: 1.5em;
+    --spacing: 10px;
+    --line-size: 2px;
+    --ball-size: 10px;
+    aside {
+        position: relative;
+        margin-left: var(--spacing);
+        padding-left: var(--spacing);
+        border-left: var(--line-size) solid;
+        border-color: var(--decor);
+        &::before {
+            content: "";
+            position: absolute;
+            // Center aligned with center of head
+            top: calc(var(--head-height) / 2 - var(--ball-size) / 2);
+            // Center aligned with center of line
+            left: calc(0px - var(--line-size) / 2 - var(--ball-size) / 2);
+            width: var(--ball-size);
+            height: var(--ball-size);
+            background-color: black;
+            border-radius: 100000px;
+        }
+        header {
+            background: #ddf;
+            position: relative;
+            height: var(--head-height);
+            margin-left: calc(var(--head-height) / 2);
+            margin-right: 20px;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: inherit;
+                --diag: calc(var(--head-height) / #{math.sqrt(2)});
+                width: var(--diag);
+                height: var(--diag);
+                transform-origin: 0 0;
+                transform: rotate(45deg);
+                z-index: 0;
+            }
+        
+            &>* {
+                z-index: 1;
+                position: relative;
+            }
+        }
+        main {
+            padding-bottom: 10px;
+            &> :last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
