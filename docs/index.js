@@ -29784,23 +29784,27 @@
 	            React.createElement("dd", null, "Guildford, Surrey County, UK"))),
 	    React.createElement(Section, { title: "Experience" },
 	        React.createElement(Timeline, null, [[
-	                React.createElement(Experience, { from: '2017-07', to: '2017-08', role: 'intern', employer: ['N-Ware', 'n-ware.hu/en'] }),
+	                React.createElement(Experience, { from: "2022-12", to: "2023-02", role: "React Developer", employer: ["Ruuby LTD.", "ruuby.com"] }),
 	                React.createElement(React.Fragment, null,
-	                    React.createElement("p", null, "Solving problems with unfamiliar technologies, internationalising a MODX site"))
+	                    React.createElement("p", null, "Adding features and improving code quality in a React-Native application and the corresponding Express.JS API server."))
 	            ], [
-	                React.createElement(Experience, { from: '2018-10', to: '2019-03', role: 'Web developer', employer: ['Remiz KFT'] }),
+	                React.createElement(Experience, { from: "2022-04", to: "2022-11", role: "Digital Experience", employer: ["University of Surrey Students' Union", 'ussu.co.uk'] }),
 	                React.createElement(React.Fragment, null,
-	                    React.createElement("p", null, "Adding features to an enterprise-scale codebase, debugging, using an ORM efficiently, refactoring"),
-	                    React.createElement(Taglist, { tags: ['C#', 'ASP.NET Core MVC', 'Entity Framework'] }))
+	                    React.createElement("p", null, "Cooperating with union staff to identify and implement optimal content structure. Optimizing a Wordpress site to run on an IoT device."))
 	            ], [
 	                React.createElement(Experience, { from: '2020-02', to: '2020-09', role: 'Web developer', project: '\u00C1rny\u00E9kegyetem', employer: ['ELTE (freelance)'] }),
 	                React.createElement(React.Fragment, null,
 	                    React.createElement("p", null, "Managing and developing a webapp start to finish, discussing features and progress with clients, modern web technologies, time management"),
 	                    React.createElement(Taglist, { tags: ['Docker', 'Node.js', 'Typescript', 'React.js', 'Fastify'] }))
 	            ], [
-	                React.createElement(Experience, { from: "2022-04", role: "Digital Experience", employer: ["University of Surrey Students' Union", 'ussu.co.uk'] }),
+	                React.createElement(Experience, { from: '2018-10', to: '2019-03', role: 'Web developer', employer: ['Remiz KFT'] }),
 	                React.createElement(React.Fragment, null,
-	                    React.createElement("p", null, "Cooperating with union staff to identify and implement optimal content structure. Optimizing a Wordpress site to run on an IoT device."))
+	                    React.createElement("p", null, "Adding features to an enterprise-scale codebase, debugging, using an ORM efficiently, refactoring"),
+	                    React.createElement(Taglist, { tags: ['C#', 'ASP.NET Core MVC', 'Entity Framework'] }))
+	            ], [
+	                React.createElement(Experience, { from: '2017-07', to: '2017-08', role: 'intern', employer: ['N-Ware', 'n-ware.hu/en'] }),
+	                React.createElement(React.Fragment, null,
+	                    React.createElement("p", null, "Solving problems with unfamiliar technologies, internationalising a MODX site"))
 	            ]])),
 	    React.createElement(Section, { compact: true, className: "education", title: 'Education' },
 	        React.createElement("article", null,
@@ -29809,7 +29813,10 @@
 	                React.createElement(Timespan, { className: "duration", from: "2020" }),
 	                React.createElement(Institute, { title: "University of Surrey", website: "surrey.ac.uk" })),
 	            React.createElement("main", null,
-	                React.createElement("p", null, "Object-oriented programming, project planning and documentation techniques")))),
+	                React.createElement("p", null,
+	                    "Object-oriented programming, project planning and documentation techniques, Created Orchid (",
+	                    React.createElement(Anchor, { to: "github.com/lbfalvy/orchid" }),
+	                    "), a functional programming language with an interpreter written in Rust.")))),
 	    React.createElement(Section, { compact: true, title: 'Languages' },
 	        React.createElement(Dictionary, null, [
 	            ['Hungarian', 'Native tongue'],

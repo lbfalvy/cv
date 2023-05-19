@@ -30,22 +30,24 @@ export const Body = () => <main className='Body'>
     </section>
     <Section title="Experience">
         <Timeline>{[[
-            <Experience from='2017-07' to='2017-08' role='intern'
-                employer={['N-Ware', 'n-ware.hu/en']}
+            <Experience from="2022-12" to="2023-02" role="React Developer"
+                employer={["Ruuby LTD.", "ruuby.com"]}
             />,
             <>
                 <p>
-                    Solving problems with unfamiliar technologies, internationalising a MODX site
+                    Adding features and improving code quality in a React-Native application and
+                    the corresponding Express.JS API server.
                 </p>
             </>
         ], [
-            <Experience from='2018-10' to='2019-03' role='Web developer' employer={['Remiz KFT']} />,
+            <Experience from="2022-04" to="2022-11" role="Digital Experience"
+                employer={["University of Surrey Students' Union", 'ussu.co.uk']}
+            />,
             <>
                 <p>
-                    Adding features to an enterprise-scale codebase, debugging,
-                    using an ORM efficiently, refactoring
+                    Cooperating with union staff to identify and implement optimal content
+                    structure. Optimizing a Wordpress site to run on an IoT device.
                 </p>
-                <Taglist tags={['C#', 'ASP.NET Core MVC', 'Entity Framework']} />
             </>
         ], [
             <Experience from='2020-02' to='2020-09' role='Web developer'
@@ -60,13 +62,21 @@ export const Body = () => <main className='Body'>
                 <Taglist tags={['Docker', 'Node.js', 'Typescript', 'React.js', 'Fastify']} />
             </>
         ], [
-            <Experience from="2022-04" role="Digital Experience"
-                employer={["University of Surrey Students' Union", 'ussu.co.uk']}
+            <Experience from='2018-10' to='2019-03' role='Web developer' employer={['Remiz KFT']} />,
+            <>
+                <p>
+                    Adding features to an enterprise-scale codebase, debugging,
+                    using an ORM efficiently, refactoring
+                </p>
+                <Taglist tags={['C#', 'ASP.NET Core MVC', 'Entity Framework']} />
+            </>
+        ], [
+            <Experience from='2017-07' to='2017-08' role='intern'
+                employer={['N-Ware', 'n-ware.hu/en']}
             />,
             <>
                 <p>
-                    Cooperating with union staff to identify and implement optimal content
-                    structure. Optimizing a Wordpress site to run on an IoT device.
+                    Solving problems with unfamiliar technologies, internationalising a MODX site
                 </p>
             </>
         ]]}</Timeline>
@@ -80,7 +90,9 @@ export const Body = () => <main className='Body'>
             </header>
             <main>
                 <p>
-                    Object-oriented programming, project planning and documentation techniques
+                    Object-oriented programming, project planning and documentation techniques,
+                    Created Orchid (<Anchor to="github.com/lbfalvy/orchid" />), a functional
+                    programming language with an interpreter written in Rust.
                 </p>
             </main>
         </article>
