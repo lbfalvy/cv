@@ -29786,25 +29786,26 @@
 	        React.createElement(Timeline, null, [[
 	                React.createElement(Experience, { from: "2022-12", to: "2023-02", role: "React Developer", employer: ["Ruuby LTD.", "ruuby.com"] }),
 	                React.createElement(React.Fragment, null,
-	                    React.createElement("p", null, "Adding features and improving code quality in a React-Native application and the corresponding Express.JS API server."))
+	                    React.createElement("p", null, "Added features and improved code quality in a mobile application and the corresponding API server. Participated in planning and scrum ceremonies."),
+	                    React.createElement(Taglist, { tags: [
+	                            "Docker", "Rush.js", "AWS", "Node.js", "Typescript",
+	                            "React.js", "React-native", "Express.js"
+	                        ] }))
 	            ], [
 	                React.createElement(Experience, { from: "2022-04", to: "2022-11", role: "Digital Experience", employer: ["University of Surrey Students' Union", 'ussu.co.uk'] }),
 	                React.createElement(React.Fragment, null,
-	                    React.createElement("p", null, "Cooperating with union staff to identify and implement optimal content structure. Optimizing a Wordpress site to run on an IoT device."))
+	                    React.createElement("p", null, "Cooperated with union staff to find and implement optimal content structure. Optimized a Wordpress site for deployment on a microcontroller."),
+	                    React.createElement(Taglist, { tags: ["PHP", "WordPress"] }))
 	            ], [
 	                React.createElement(Experience, { from: '2020-02', to: '2020-09', role: 'Web developer', project: '\u00C1rny\u00E9kegyetem', employer: ['ELTE (freelance)'] }),
 	                React.createElement(React.Fragment, null,
-	                    React.createElement("p", null, "Managing and developing a webapp start to finish, discussing features and progress with clients, modern web technologies, time management"),
+	                    React.createElement("p", null, "Managed and developed a webapp from planning to release. Contact with client throughout the development process. Used modern web technologies to create an immersive experience."),
 	                    React.createElement(Taglist, { tags: ['Docker', 'Node.js', 'Typescript', 'React.js', 'Fastify'] }))
 	            ], [
 	                React.createElement(Experience, { from: '2018-10', to: '2019-03', role: 'Web developer', employer: ['Remiz KFT'] }),
 	                React.createElement(React.Fragment, null,
-	                    React.createElement("p", null, "Adding features to an enterprise-scale codebase, debugging, using an ORM efficiently, refactoring"),
+	                    React.createElement("p", null, "Added features to an enterprise-scale codebase, identified and fixed bugs. Optimized queries to support large volumes of traffic and data."),
 	                    React.createElement(Taglist, { tags: ['C#', 'ASP.NET Core MVC', 'Entity Framework'] }))
-	            ], [
-	                React.createElement(Experience, { from: '2017-07', to: '2017-08', role: 'intern', employer: ['N-Ware', 'n-ware.hu/en'] }),
-	                React.createElement(React.Fragment, null,
-	                    React.createElement("p", null, "Solving problems with unfamiliar technologies, internationalising a MODX site"))
 	            ]])),
 	    React.createElement(Section, { compact: true, className: "education", title: 'Education' },
 	        React.createElement("article", null,
@@ -29855,7 +29856,7 @@
 	    return React.createElement("div", { className: "Options" },
 	        React.createElement("h1", null, "CV generator"),
 	        React.createElement("p", null, "This isn't an on-line CV, it is a template for printing PDFs. If you try to print it, this explanatory paragraph will disappear and the remaining document will fit perfectly onto an A4 page."),
-	        React.createElement("p", null, "If I had variable options, such as sections that are only visible when printing for a particular field of work, they would be displayed here."));
+	        React.createElement("p", null, "If there were variable options, such as sections that are only visible when printing for a particular field of work, they would be displayed here."));
 	}
 
 	___$insertStylesToHeader("html {\n  background-color: black;\n  overflow: scroll;\n  box-sizing: content-box;\n}\n\nbody {\n  margin: 0;\n}");

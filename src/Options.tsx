@@ -26,8 +26,8 @@ export function Options(): React.ReactElement {
             onto an A4 page.
         </p>
         <p>
-            If I had variable options, such as sections that are only visible when printing for a
-            particular field of work, they would be displayed here.
+            If there were variable options, such as sections that are only visible when
+            printing for a particular field of work, they would be displayed here.
         </p>
     </div>
 }

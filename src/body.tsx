@@ -35,9 +35,13 @@ export const Body = () => <main className='Body'>
             />,
             <>
                 <p>
-                    Adding features and improving code quality in a React-Native application and
-                    the corresponding Express.JS API server.
+                    Added features and improved code quality in a mobile application and
+                    the corresponding API server. Participated in planning and scrum ceremonies.
                 </p>
+                <Taglist tags={[
+                    "Docker", "Rush.js", "AWS", "Node.js", "Typescript",
+                    "React.js", "React-native", "Express.js"
+                ]} />
             </>
         ], [
             <Experience from="2022-04" to="2022-11" role="Digital Experience"
@@ -45,9 +49,10 @@ export const Body = () => <main className='Body'>
             />,
             <>
                 <p>
-                    Cooperating with union staff to identify and implement optimal content
-                    structure. Optimizing a Wordpress site to run on an IoT device.
+                    Cooperated with union staff to find and implement optimal content structure.
+                    Optimized a Wordpress site for deployment on a microcontroller.
                 </p>
+                <Taglist tags={["PHP", "WordPress"]} />
             </>
         ], [
             <Experience from='2020-02' to='2020-09' role='Web developer'
@@ -55,9 +60,9 @@ export const Body = () => <main className='Body'>
             />,
             <>
                 <p>
-                    Managing and developing a webapp start to finish,
-                    discussing features and progress with clients,
-                    modern web technologies, time management
+                    Managed and developed a webapp from planning to release.
+                    Contact with client throughout the development process.
+                    Used modern web technologies to create an immersive experience.
                 </p>
                 <Taglist tags={['Docker', 'Node.js', 'Typescript', 'React.js', 'Fastify']} />
             </>
@@ -65,19 +70,10 @@ export const Body = () => <main className='Body'>
             <Experience from='2018-10' to='2019-03' role='Web developer' employer={['Remiz KFT']} />,
             <>
                 <p>
-                    Adding features to an enterprise-scale codebase, debugging,
-                    using an ORM efficiently, refactoring
+                    Added features to an enterprise-scale codebase, identified and fixed bugs.
+                    Optimized queries to support large volumes of traffic and data.
                 </p>
                 <Taglist tags={['C#', 'ASP.NET Core MVC', 'Entity Framework']} />
-            </>
-        ], [
-            <Experience from='2017-07' to='2017-08' role='intern'
-                employer={['N-Ware', 'n-ware.hu/en']}
-            />,
-            <>
-                <p>
-                    Solving problems with unfamiliar technologies, internationalising a MODX site
-                </p>
             </>
         ]]}</Timeline>
     </Section>
