@@ -22,7 +22,7 @@
 
     // Leftover rules for sections
     .header {
-        padding: 10px 30px;
+        padding: 5px 30px 10px 30px;
         background: $head-bg;
         color: white;
         text-align: right;
@@ -40,82 +40,63 @@
             padding: 0;
             margin-left: 5px;
         }
-    }
-    .personal {
-        background: #eef;
-        padding: 10px 0;
-        font-size: .8em;
-        dl {
-            display: flex;
-            $borders: $head-bg;
-            color: $head-bg;
-            margin: 0;
-            dt, dd, &::after, &::before {
-                display: inline-block;
-                border: 2px solid transparent;
-                border-left-width: 1px; border-right-width: 1px;
-            }
-            dt, &::after {
-                break-after: avoid;
-                padding: 5px 0 5px 10px;
-                border-top-color: $borders;
-                border-left-color: $borders;
-                font-weight: 600;
-                font-style: italic;
-            }
-            dt::after {
-                content: ": ";
-                display: inline;
-            }
-            dd, &::before {
-                display: inline-block;
-                padding: 5px 10px 5px 0px;
-                margin: 0;
-                // margin-right: 10px;
-                border-right-color: $borders;
-                border-bottom-color: $borders;
-            }
-            &::after, &::before {
-                content: "\00a0";
-                flex-grow: 1;
+        aside {
+            text-align: left;
+            position: absolute;
+            top: 10px;
+            left: 15px;
+            width: 50%;
+            dl {
+                margin: 0px;
+                span {
+                    display: table-row;
+                    
+                    dt, dd { display: table-cell; }
+                    dt {
+                        font-weight: 700;
+                        font-style: italic;
+                        padding-right: 15px;
+                    }
+                }
             }
         }
     }
     .education {
         padding-right: 0;
-        main > article {
-            header {
-                border-top-left-radius: 1000px;
-                border-bottom-left-radius: 1000px;
-                background-color: white;
-                display: grid;
-                grid-template-columns: max-content auto;
-                grid-template-areas:
-                    'name duration'
-                    'name institute';
-                h3 {
-                    grid-area: name;
-                    padding: 5px 10px;
-                    padding-top: calc(8px);
-                    margin: 0;
+        main {
+            article {
+                header {
+                    border-top-left-radius: 1000px;
+                    border-bottom-left-radius: 1000px;
+                    background-color: #d8d8f4;
+                    h3 {
+                        display: inline-block;
+                        grid-area: name;
+                        padding: 0px 1em;
+                        margin: 0;
+                    }
+                    .duration {
+                        grid-area: duration;
+                    }
+                    .overall {
+                        grid-area: overall;
+                        padding-right: 1em;
+                    }
+                    .Institute {
+                        grid-area: institute;
+                    }
                 }
-                .duration {
-                    grid-area: duration;
-                }
-                .institute {
-                    grid-area: institute;
-                }
-            }
-            main {
-                // padding-bottom: 5px;
-                & > p:last-child {
-                    margin-bottom: 0;
+                main {
+                    // padding-bottom: 5px;
+                    & > p:last-child {
+                        margin-bottom: 0;
+                    }
                 }
             }
         }
     }
     .this-cv {
-        padding: 10px 30px;
+        padding: 5px 15px;
         background-color: $head-bg !important;
         color: white;
         position: absolute;

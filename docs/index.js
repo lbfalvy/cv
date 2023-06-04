@@ -29698,7 +29698,7 @@
 
 	var ReactDOM = reactDom.exports;
 
-	___$insertStylesToHeader("@charset \"UTF-8\";\n@import url(\"https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap\");\n.Body {\n  position: relative;\n  background: white;\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  overflow: hidden;\n  font-family: sans-serif;\n}\n@media screen {\n  .Body {\n    width: 21cm;\n    height: 29.7cm;\n  }\n}\n@media print {\n  .Body {\n    width: 100vw;\n    height: 100vh;\n  }\n}\n.Body a {\n  color: #559;\n  text-decoration: none;\n  font-style: unset;\n}\n.Body p {\n  margin: 0;\n  margin-bottom: 0.5em;\n}\n.Body .header {\n  padding: 10px 30px;\n  background: #333;\n  color: white;\n  text-align: right;\n}\n.Body .header address {\n  display: inline-block;\n  font-style: normal;\n}\n.Body .header address:not(:last-of-type) {\n  padding-right: 10px;\n}\n.Body .header address:not(:first-of-type) {\n  padding-left: 10px;\n}\n.Body .header a {\n  color: inherit;\n}\n.Body .header h1 {\n  font-family: \"Oswald\", sans-serif;\n  text-transform: uppercase;\n  margin: 0;\n  padding: 0;\n  margin-left: 5px;\n}\n.Body .personal {\n  background: #eef;\n  padding: 10px 0;\n  font-size: 0.8em;\n}\n.Body .personal dl {\n  display: flex;\n  color: #333;\n  margin: 0;\n}\n.Body .personal dl dt, .Body .personal dl dd, .Body .personal dl::after, .Body .personal dl::before {\n  display: inline-block;\n  border: 2px solid transparent;\n  border-left-width: 1px;\n  border-right-width: 1px;\n}\n.Body .personal dl dt, .Body .personal dl::after {\n  break-after: avoid;\n  padding: 5px 0 5px 10px;\n  border-top-color: #333;\n  border-left-color: #333;\n  font-weight: 600;\n  font-style: italic;\n}\n.Body .personal dl dt::after {\n  content: \": \";\n  display: inline;\n}\n.Body .personal dl dd, .Body .personal dl::before {\n  display: inline-block;\n  padding: 5px 10px 5px 0px;\n  margin: 0;\n  border-right-color: #333;\n  border-bottom-color: #333;\n}\n.Body .personal dl::after, .Body .personal dl::before {\n  content: \" \";\n  flex-grow: 1;\n}\n.Body .education {\n  padding-right: 0;\n}\n.Body .education main > article header {\n  border-top-left-radius: 1000px;\n  border-bottom-left-radius: 1000px;\n  background-color: white;\n  display: grid;\n  grid-template-columns: max-content auto;\n  grid-template-areas: \"name duration\" \"name institute\";\n}\n.Body .education main > article header h3 {\n  grid-area: name;\n  padding: 5px 10px;\n  padding-top: 8px;\n  margin: 0;\n}\n.Body .education main > article header .duration {\n  grid-area: duration;\n}\n.Body .education main > article header .institute {\n  grid-area: institute;\n}\n.Body .education main > article main > p:last-child {\n  margin-bottom: 0;\n}\n.Body .this-cv {\n  padding: 10px 30px;\n  background-color: #333 !important;\n  color: white;\n  position: absolute;\n  display: block;\n  left: 0;\n  bottom: 0;\n  width: inherit;\n  box-sizing: border-box;\n}\n.Body .this-cv a {\n  color: #68f;\n}");
+	___$insertStylesToHeader("@import url(\"https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap\");\n.Body {\n  position: relative;\n  background: white;\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  overflow: hidden;\n  font-family: sans-serif;\n}\n@media screen {\n  .Body {\n    width: 21cm;\n    height: 29.7cm;\n  }\n}\n@media print {\n  .Body {\n    width: 100vw;\n    height: 100vh;\n  }\n}\n.Body a {\n  color: #559;\n  text-decoration: none;\n  font-style: unset;\n}\n.Body p {\n  margin: 0;\n  margin-bottom: 0.5em;\n}\n.Body .header {\n  padding: 5px 30px 10px 30px;\n  background: #333;\n  color: white;\n  text-align: right;\n}\n.Body .header address {\n  display: inline-block;\n  font-style: normal;\n}\n.Body .header address:not(:last-of-type) {\n  padding-right: 10px;\n}\n.Body .header address:not(:first-of-type) {\n  padding-left: 10px;\n}\n.Body .header a {\n  color: inherit;\n}\n.Body .header h1 {\n  font-family: \"Oswald\", sans-serif;\n  text-transform: uppercase;\n  margin: 0;\n  padding: 0;\n  margin-left: 5px;\n}\n.Body .header aside {\n  text-align: left;\n  position: absolute;\n  top: 10px;\n  left: 15px;\n  width: 50%;\n}\n.Body .header aside dl {\n  margin: 0px;\n}\n.Body .header aside dl span {\n  display: table-row;\n}\n.Body .header aside dl span dt, .Body .header aside dl span dd {\n  display: table-cell;\n}\n.Body .header aside dl span dt {\n  font-weight: 700;\n  font-style: italic;\n  padding-right: 15px;\n}\n.Body .education {\n  padding-right: 0;\n}\n.Body .education main article header {\n  border-top-left-radius: 1000px;\n  border-bottom-left-radius: 1000px;\n  background-color: #d8d8f4;\n}\n.Body .education main article header h3 {\n  display: inline-block;\n  grid-area: name;\n  padding: 0px 1em;\n  margin: 0;\n}\n.Body .education main article header .duration {\n  grid-area: duration;\n}\n.Body .education main article header .overall {\n  grid-area: overall;\n  padding-right: 1em;\n}\n.Body .education main article header .Institute {\n  grid-area: institute;\n}\n.Body .education main article main > p:last-child {\n  margin-bottom: 0;\n}\n.Body .this-cv {\n  padding: 5px 15px;\n  background-color: #333 !important;\n  color: white;\n  position: absolute;\n  display: block;\n  left: 0;\n  bottom: 0;\n  width: inherit;\n  box-sizing: border-box;\n}\n.Body .this-cv a {\n  color: #68f;\n}");
 
 	function Anchor({ to: to }) {
 	    return React.createElement("a", { href: `https://${to}` }, to);
@@ -29727,7 +29727,7 @@
 	    React.createElement("dt", null, key),
 	    React.createElement("dd", null, value))));
 
-	___$insertStylesToHeader(".Section {\n  padding: 10px;\n}\n.Section h2 {\n  font-family: \"Oswald\", sans-serif;\n  text-transform: uppercase;\n  margin: 0;\n  padding: 0;\n}\n.Section:nth-child(2n) {\n  background: #eef;\n}\n.Section.inline {\n  padding-right: 0;\n  display: flex;\n  flex-direction: row;\n}\n.Section.inline h2 {\n  flex: 0 0 auto;\n  margin-right: 20px;\n}\n.Section.inline main {\n  flex: 1 1 auto;\n}");
+	___$insertStylesToHeader(".Section {\n  padding: 2px 10px;\n}\n.Section h2 {\n  font-family: \"Oswald\", sans-serif;\n  text-transform: uppercase;\n  margin: 0;\n  padding: 0;\n}\n.Section:nth-child(2n) {\n  background: #eef;\n}\n.Section.inline {\n  padding-right: 0;\n  display: flex;\n  flex-direction: row;\n}\n.Section.inline h2 {\n  flex: 0 0 auto;\n  margin-right: 20px;\n}\n.Section.inline main {\n  flex: 1 1 auto;\n}");
 
 	const Section = ({ title, compact, children, className }) => React.createElement(React.Fragment, null,
 	    React.createElement("section", { className: classList('Section', compact && 'inline', className) },
@@ -29773,15 +29773,18 @@
 	        React.createElement("address", null, "lbfalvy@protonmail.com"),
 	        React.createElement("address", null, "(+44) 7444 416 038"),
 	        React.createElement("address", null,
-	            React.createElement(Anchor, { to: 'www.lbfalvy.com' }))),
-	    React.createElement("section", { className: 'personal' },
-	        React.createElement("dl", null,
-	            React.createElement("dt", null, "Born"),
-	            React.createElement("dd", null, "2001-04-19"),
-	            React.createElement("dt", null, "Nationality"),
-	            React.createElement("dd", null, "Hungarian"),
-	            React.createElement("dt", null, "Residence"),
-	            React.createElement("dd", null, "Guildford, Surrey County, UK"))),
+	            React.createElement(Anchor, { to: 'www.lbfalvy.com' })),
+	        React.createElement("aside", null,
+	            React.createElement("dl", null,
+	                React.createElement("span", null,
+	                    React.createElement("dt", null, "Residence"),
+	                    React.createElement("dd", null, "Guildford, UK")),
+	                React.createElement("span", null,
+	                    React.createElement("dt", null, "Born"),
+	                    React.createElement("dd", null, "2001-04-19")),
+	                React.createElement("span", null,
+	                    React.createElement("dt", null, "Nationality"),
+	                    React.createElement("dd", null, "Hungarian"))))),
 	    React.createElement(Section, { title: "Experience" },
 	        React.createElement(Timeline, null, [[
 	                React.createElement(Experience, { from: "2022-12", to: "2023-02", role: "React Developer", employer: ["Ruuby LTD.", "ruuby.com"] }),
@@ -29807,17 +29810,26 @@
 	                    React.createElement("p", null, "Added features to an enterprise-scale codebase, identified and fixed bugs. Optimized queries to support large volumes of traffic and data."),
 	                    React.createElement(Taglist, { tags: ['C#', 'ASP.NET Core MVC', 'Entity Framework'] }))
 	            ]])),
-	    React.createElement(Section, { compact: true, className: "education", title: 'Education' },
+	    React.createElement(Section, { className: "education", title: 'Education' },
 	        React.createElement("article", null,
 	            React.createElement("header", null,
 	                React.createElement("h3", null, "BSc (Computer Science)"),
 	                React.createElement(Timespan, { className: "duration", from: "2020" }),
+	                React.createElement("span", { className: "overall" }, "Predicted 2:1"),
 	                React.createElement(Institute, { title: "University of Surrey", website: "surrey.ac.uk" })),
 	            React.createElement("main", null,
 	                React.createElement("p", null,
 	                    "Object-oriented programming, project planning and documentation techniques, Created Orchid (",
 	                    React.createElement(Anchor, { to: "github.com/lbfalvy/orchid" }),
-	                    "), a functional programming language with an interpreter written in Rust.")))),
+	                    "), a functional programming language with an interpreter written in Rust."))),
+	        React.createElement("article", null,
+	            React.createElement("header", null,
+	                React.createElement("h3", null, "Hungarian Matura"),
+	                React.createElement(Timespan, { className: "duration", from: "2014", to: "2020" }),
+	                React.createElement("span", { className: "overall" }, "87% - AAB equivalent"),
+	                React.createElement(Institute, { title: "Fazekas Mih\u00E1ly High School", website: "fazekas.hu" })),
+	            React.createElement("main", null,
+	                React.createElement("p", null, "Studied advanced mathematical topics, basics of computer programming. Graduated with 94% in mathematics at advanced level and 90% in IT at advanced level.")))),
 	    React.createElement(Section, { compact: true, title: 'Languages' },
 	        React.createElement(Dictionary, null, [
 	            ['Hungarian', 'Native tongue'],

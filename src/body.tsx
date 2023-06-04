@@ -20,14 +20,14 @@ export const Body = () => <main className='Body'>
         <address>lbfalvy@protonmail.com</address>
         <address>(+44) 7444 416 038</address>
         <address><Anchor to='www.lbfalvy.com'/></address>
+        <aside>
+            <dl>
+                <span><dt>Residence</dt><dd>Guildford, UK</dd></span>
+                <span><dt>Born</dt><dd>2001-04-19</dd></span>
+                <span><dt>Nationality</dt><dd>Hungarian</dd></span>
+            </dl>
+        </aside>
     </header>
-    <section className='personal'>
-        <dl>
-            <dt>Born</dt><dd>2001-04-19</dd>
-            <dt>Nationality</dt><dd>Hungarian</dd>
-            <dt>Residence</dt><dd>Guildford, Surrey County, UK</dd>
-        </dl>
-    </section>
     <Section title="Experience">
         <Timeline>{[[
             <Experience from="2022-12" to="2023-02" role="React Developer"
@@ -77,11 +77,14 @@ export const Body = () => <main className='Body'>
             </>
         ]]}</Timeline>
     </Section>
-    <Section compact className="education" title='Education'>
+    <Section className="education" title='Education'>
         <article>
             <header>
                 <h3>BSc (Computer Science)</h3>
                 <Timespan className="duration" from="2020" />
+                <span className="overall">
+                    Predicted 2:1
+                </span>
                 <Institute title="University of Surrey" website="surrey.ac.uk" />
             </header>
             <main>
@@ -89,6 +92,22 @@ export const Body = () => <main className='Body'>
                     Object-oriented programming, project planning and documentation techniques,
                     Created Orchid (<Anchor to="github.com/lbfalvy/orchid" />), a functional
                     programming language with an interpreter written in Rust.
+                </p>
+            </main>
+        </article>
+        <article>
+            <header>
+                <h3>Hungarian Matura</h3>
+                <Timespan className="duration" from="2014" to="2020" />
+                <span className="overall">
+                    87% - AAB equivalent
+                </span>
+                <Institute title="Fazekas Mihály High School" website="fazekas.hu" />
+            </header>
+            <main>
+                <p>
+                    Studied advanced mathematical topics, basics of computer programming.
+                    Graduated with 94% in mathematics at advanced level and 90% in IT at advanced level. 
                 </p>
             </main>
         </article>
