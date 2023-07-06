@@ -83,7 +83,7 @@ export const Body = () => <main className='Body'>
                 <h3>BSc (Computer Science)</h3>
                 <Timespan className="duration" from="2020" />
                 <span className="overall">
-                    Predicted 2:1
+                    Predicted first
                 </span>
                 <Institute title="University of Surrey" website="surrey.ac.uk" />
             </header>
@@ -134,6 +134,10 @@ export const Body = () => <main className='Body'>
             ]}</Dictionary>
     </Section>
     <Section compact title='Open Source'>
+        <p>
+            I'm very enthusiastic about open source, solid foundation work and reusable code, and
+            maintain a lot of NPM packages and a few Cargo crates.
+        </p>
         <Dictionary>{[
             ['Github', <Anchor to='github.com/lbfalvy' />],
             ['NPM', <Anchor to='www.npmjs.com/~lbfalvy' />]
