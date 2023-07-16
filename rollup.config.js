@@ -6,24 +6,24 @@ import replace from '@rollup/plugin-replace'
 import scss from 'rollup-plugin-scss'
 
 export default {
-    input: 'src/index.tsx',
-    output: {
-        dir: './docs',
-        format: 'umd'
-    },
-    plugins: [
-        replace({
-            preventAssignment: true,
-            values: {
-                'process.env.NODE_ENV': `"development"`
-            }
-        }),
-        ts(),
-        html({
-            title: 'CV'
-        }),
-        resolve(),
-        cjs(),
-        scss({ insert: true })
-    ]
+  input: 'src/index.tsx',
+  output: {
+    dir: './docs',
+    format: 'umd'
+  },
+  plugins: [
+    replace({
+      preventAssignment: true,
+      values: {
+        'process.env.NODE_ENV': `"development"`
+      }
+    }),
+    ts(),
+    html({
+      title: 'CV'
+    }),
+    resolve(),
+    cjs(),
+    scss({ insert: true })
+  ]
 }

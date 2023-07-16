@@ -1,16 +1,16 @@
 .Dictionary {
-    margin-top: 0px;
-    margin-bottom: 1px;
-    &>div {
-        &>dt {
-            display: inline;
-        }
-        &>dd {
-            display: inline;
-            margin: 0;
-            &::before {
-                content: ' -- ';
-            }
-        }
+  margin-top: 0px;
+  margin-bottom: 1px;
+  &>div {
+    &>dt {
+      display: inline;
     }
+    &>dd {
+      display: inline;
+      margin: 0;
+      &::before {
+        content: ' -- ';
+      }
+    }
+  }
 }

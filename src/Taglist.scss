@@ -1,21 +1,21 @@
 .Taglist {
-    margin: 0;
-    padding: 0;
-    padding-top: 1px;
-    padding-bottom: 2px;
+  margin: 0;
+  padding: 0;
+  padding-top: 1px;
+  padding-bottom: 2px;
 
-    &.inline {
-        display: inline-block;
-    }
+  &.inline {
+    display: inline-block;
+  }
 
-    &>li {
-        list-style: none;
-        display: inline;
-        font-size: .9em;
-        padding: 2px .5em;
-        margin-right: 5px;
-        background-color: #79a;
-        color: white;
-        border-radius: 10000px;
-    }
+  &>li {
+    list-style: none;
+    display: inline;
+    font-size: .9em;
+    padding: 2px .5em;
+    margin-right: 5px;
+    background-color: #79a;
+    color: white;
+    border-radius: 10000px;
+  }
 }
