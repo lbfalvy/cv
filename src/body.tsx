@@ -9,6 +9,8 @@ import { Timeline } from "./Timeline";
 import { Timespan } from "./Timespan";
 import { Institute } from "./Institute";
 import { Experience } from "./Experience";
+import { Projects } from "./Projects";
+import { Unit } from "./Unit";
 
 // const search = new URLSearchParams(window.location.search)
 
@@ -17,17 +19,45 @@ document.title = `Lawrence Bethlenfalvy CV`
 export const Body = () => <main className='Body'>
   <header className="header">
     <h1>Lawrence Bethlenfalvy</h1>
-    <address>lbfalvy@protonmail.com</address>
-    <address>(+44) 7444 416 038</address>
+    <address>London, UK</address>
     <address><Anchor to='www.lbfalvy.com'/></address>
-    <aside>
-      <dl>
-        <span><dt>Residence</dt><dd>Guildford, UK</dd></span>
-        <span><dt>Born</dt><dd>2001-04-19</dd></span>
-        <span><dt>Nationality</dt><dd>Hungarian</dd></span>
-      </dl>
-    </aside>
+    <address>lbfalvy@protonmail.com</address>
+    <address>(+44) 7444 416038</address>
   </header>
+  <Section>
+    <p>
+      I'm very enthusiastic about open source and have many projects on Github.
+      I like the certainty of static typing so my language of choice is Typescript or Rust,
+      but I find my way around many toolsets and like to learn new ones.
+      I graduated recently.
+    </p>
+  </Section>
+  <Section title="Projects" meta={<>
+    <Unit style={{ marginRight: 5 }}>Github: <Anchor to="github.com/lbfalvy" />,</Unit>
+    <Unit style={{ marginRight: 5 }}>Node packages: <Anchor to="www.npmjs.com/~lbfalvy" />,</Unit>
+    <Unit>Rust crates: <Anchor to="crates.io/users/lbfalvy" /></Unit>
+  </>}>
+    <Projects>{[
+      ["Orchid", 'lbfalvy/orchid', ["Rust"], <>
+        An experimental interpreted pure functional programming language
+      </>],
+      ["Bound", "lbfalvy/bound", ["Rust"], <>
+        Generic container to return borrowing types like lock guards
+      </>],
+      ["Autocaddy", "lbfalvy/autocaddy", ["Linux", "Docker", "Bash"], <>
+        Automatic TLS terminator and reverse proxy for prototyping
+      </>],
+      ["mini-events", "lbfalvy/mini-events", ["Typescript"], <>
+        Convenient event interface, implementation and transformer library
+      </>],
+      ["react-await", "lbfalvy/react-await", ["Typescript", "React"], <>
+        lazy-loading for components and data with improved ergonomics
+      </>],
+      ["react-context-menu", "lbfalvy/react-context-menu", ["Typescript", "React"], <>
+        Custom context menu and dropdown with an elegant API
+      </>]
+    ]}</Projects>
+  </Section>
   <Section title="Experience">
     <Timeline>{[[
       <Experience from="2022-12" to="2023-02" role="React Developer"
@@ -35,8 +65,7 @@ export const Body = () => <main className='Body'>
       />,
       <>
         <p>
-          Added features and improved code quality in a mobile application and
-          the corresponding API server. Participated in planning and scrum ceremonies.
+          Added features and improved code quality in mobile app and API server with a scrum team
         </p>
         <Taglist tags={[
           "Docker", "Rush.js", "AWS", "Node.js", "Typescript",
@@ -49,105 +78,81 @@ export const Body = () => <main className='Body'>
       />,
       <>
         <p>
-          Cooperated with union staff to find and implement optimal content structure.
-          Optimized a Wordpress site for deployment on a microcontroller.
+          Collected business objectives, designed and implemented optimal content structure,
+          optimized Wordpress site for an underpowered VPS.
         </p>
         <Taglist tags={["PHP", "WordPress"]} />
       </>
     ], [
       <Experience from='2020-02' to='2020-09' role='Web developer'
-        project='Árnyékegyetem' employer={['ELTE (freelance)']}
+        employer={['Research project at Eötvös Loránd University']}
       />,
       <>
         <p>
-          Managed and developed a webapp from planning to release.
-          Contact with client throughout the development process.
-          Used modern web technologies to create an immersive experience.
+          Managed and developed highly interactive PWA through entire project lifecycle.
+          Contact with client throughout development process.
         </p>
         <Taglist tags={['Docker', 'Node.js', 'Typescript', 'React.js', 'Fastify']} />
       </>
     ], [
-      <Experience from='2018-10' to='2019-03' role='Web developer' employer={['Remiz KFT']} />,
+      <Experience from='2018-10' to='2019-03' role='Web developer' employer={['Remiz LTD']} />,
       <>
         <p>
-          Added features to an enterprise-scale codebase, identified and fixed bugs.
+          Added features and fixed bugs in enterprise-scale codebase.
           Optimized queries to support large volumes of traffic and data.
         </p>
         <Taglist tags={['C#', 'ASP.NET Core MVC', 'Entity Framework']} />
       </>
+    ], [
+      <Experience from="2016-06" to="2016-08" role="Web developer" employer={['N-ware']} />,
+      <>
+        <p>
+          Planned and executed i18n for company website. Contributed to mathematical foundations for
+          global navigation system.
+        </p>
+        <Taglist tags={['C#', 'MODX', 'PHP']} />
+      </>
     ]]}</Timeline>
   </Section>
-  <Section className="education" title='Education'>
+  <Section className="education" title='education' compact>
     <article>
       <header>
         <h3>BSc (Computer Science)</h3>
-        <Timespan className="duration" from="2020" />
-        <span className="overall">
-          Predicted first
-        </span>
         <Institute title="University of Surrey" website="surrey.ac.uk" />
       </header>
       <main>
         <p>
-          Object-oriented programming, project planning and documentation techniques,
-          Created Orchid (<Anchor to="github.com/lbfalvy/orchid" />), a functional
-          programming language with an interpreter written in Rust.
-        </p>
-      </main>
-    </article>
-    <article>
-      <header>
-        <h3>Hungarian Matura</h3>
-        <Timespan className="duration" from="2014" to="2020" />
-        <span className="overall">
-          87% - AAB equivalent
-        </span>
-        <Institute title="Fazekas Mihály High School" website="fazekas.hu" />
-      </header>
-      <main>
-        <p>
-          Studied advanced mathematical topics, basics of computer programming.
-          Graduated with 94% in mathematics at advanced level and 90% in IT at advanced level. 
+          Practiced project management, studied java, Ruby on Rails, IoT,
+          distributed and mainframe computing, verification.
+          Created a programming language called Orchid.
         </p>
       </main>
     </article>
   </Section>
-  <Section compact title='Languages'>
-    <Dictionary>{[
-      ['Hungarian', 'Native tongue'],
-      ['English', 'Advanced / IELTS 8.0 / Europass C1 equivalent']
-    ]}</Dictionary>
-  </Section>
-  <Section compact title='Skills'>
-      <div>
-        <Taglist tags={[
-          'Git', 'Docker', 'SQL',
-          'OOP', 'Functional',
-          'Python', 'Ruby', 'Rust'
-        ]} />
-      </div>
+  <Section title='Skills' meta={<>
+    <Taglist tags={[
+      'SQL',
+      'OOP', 'FP',
+      'Python', 'Ruby', 'Rust', 
+      "Rush.js", "AWS", "React-native", "Express.js",
+      "PHP", "WordPress", "MODX",
+      'C#', 'ASP.NET Core MVC', 'Entity Framework'
+    ]} />
+  </>}>
       <Dictionary>{[
         [<Taglist inline tags={['Linux']} />, 'Daily driver since 2016'],
-        [<Taglist inline tags={['Typescript', 'React', 'Node']} />, <>
-          Stack of choice, several projects
-        </>]
+        [<Taglist inline tags={['Git', 'Docker', 'Typescript', 'React', 'Node.js', 'Fastify']} />,
+          <>
+            Stack of choice, several projects
+          </>
+        ]
       ]}</Dictionary>
   </Section>
-  <Section compact title='Open Source'>
-    <p>
-      I'm very enthusiastic about open source, solid foundation work and reusable code, and
-      maintain a lot of NPM packages and a few Cargo crates.
-    </p>
-    <Dictionary>{[
-      ['Github', <Anchor to='github.com/lbfalvy' />],
-      ['NPM', <Anchor to='www.npmjs.com/~lbfalvy' />]
-    ]}</Dictionary>
-  </Section>
-  <Section className="this-cv" title='This CV'>
+  <Section className="this-cv">
     <p>
       This CV is written in React. The latest version is available online
       at <Anchor to={`www.lbfalvy.com/cv/index.html${location.search}`} />.
-      The code is on my github at <Anchor to='github.com/lbfalvy/cv' />.
+      The code is on github at <Anchor to='github.com/lbfalvy/cv' />.
       This version was printed at {Temporal.Now.plainDateISO().toString()}.
     </p>
   </Section>

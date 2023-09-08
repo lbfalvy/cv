@@ -1,19 +1,20 @@
 .Taglist {
   margin: 0;
   padding: 0;
-  padding-top: 1px;
-  padding-bottom: 2px;
+  // padding-top: 1px;
+  // padding-bottom: 2px;
 
   &.inline {
     display: inline-block;
   }
 
   &>li {
+    line-height: 1.1em;
     list-style: none;
-    display: inline;
+    display: inline-block;
     font-size: .9em;
     padding: 2px .5em;
-    margin-right: 5px;
+    margin-right: 2px;
     background-color: #79a;
     color: white;
     border-radius: 10000px;

@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
 @import './a4.scss';
 
+h2 {
+  margin: 0 0;
+}
+
 .Body {
   position: relative;
   background: white;
@@ -34,6 +38,7 @@
     address:not(:first-of-type) { padding-left: 10px; }
     a { color: inherit; }
     h1 {
+      float: left;
       font-family: 'Oswald', sans-serif;
       text-transform: uppercase;
       margin: 0;
@@ -63,9 +68,9 @@
   }
   .education {
     padding-right: 0;
-    main {
-      article {
-        header {
+    & > main {
+      & > article {
+        & > header {
           border-top-left-radius: 1000px;
           border-bottom-left-radius: 1000px;
           background-color: #d8d8f4;
@@ -86,7 +91,7 @@
             grid-area: institute;
           }
         }
-        main {
+        & > main {
           // padding-bottom: 5px;
           & > p:last-child {
             margin-bottom: 0;

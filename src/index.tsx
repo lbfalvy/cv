@@ -14,6 +14,6 @@ function getRoot() {
 }
 
 ReactDOM.render(<>
-  <Options />
   <Body />
+  <Options />
 </>, getRoot())

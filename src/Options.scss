@@ -1,4 +1,5 @@
 .Options {
+  box-sizing: border-box;
   @media print {
     display: none;
   }
@@ -9,6 +10,6 @@
   label {
     display: block;
   }
-  max-width: 21cm;
+  max-width: calc(100vw - 21cm);
   padding: 5px 10px;
 }
