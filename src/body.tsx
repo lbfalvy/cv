@@ -39,7 +39,7 @@ export const Body = () => <main className='Body'>
   </>}>
     <Projects>{[
       ["Orchid", 'lbfalvy/orchid', ["Rust"], <>
-        An experimental interpreted pure functional programming language
+        An experimental interpreted pure functional programming language.
       </>],
       ["Bound", "lbfalvy/bound", ["Rust"], <>
         Generic container to return borrowing types like lock guards
@@ -65,7 +65,9 @@ export const Body = () => <main className='Body'>
       />,
       <>
         <p>
-          Added features and improved code quality in mobile app and API server with a scrum team
+          In a scrum team, added features and improved code quality of appointment manager mobile app
+          and API server.
+          Established functional design patterns to improve analysis and catch bugs.
         </p>
         <Taglist tags={[
           "Docker", "Rush.js", "AWS", "Node.js", "Typescript",
@@ -73,13 +75,14 @@ export const Body = () => <main className='Body'>
         ]} />
       </>
     ], [
-      <Experience from="2022-04" to="2022-11" role="Digital Experience"
+      <Experience from="2022-04" to="2022-11" role="Wordpress Developer"
         employer={["University of Surrey Students' Union", 'ussu.co.uk']}
       />,
       <>
         <p>
-          Collected business objectives, designed and implemented optimal content structure,
-          optimized Wordpress site for an underpowered VPS.
+          Collected business objectives, designed and implemented optimal content structure in
+          public-facing knowledge base.
+          Optimized Wordpress site for deployment on an underpowered VPS.
         </p>
         <Taglist tags={["PHP", "WordPress"]} />
       </>
@@ -89,10 +92,15 @@ export const Body = () => <main className='Body'>
       />,
       <>
         <p>
-          Managed and developed highly interactive PWA through entire project lifecycle.
-          Contact with client throughout development process.
+          Managed and developed interactive real-time PWA with user-defined content
+          structure.
+          Built proof-of-concepts, collected feedback and implemented rapidly evolving requirements
+          through entire project lifecycle.
+          Supported public launch with 1000 concurrent user spike without downtime on an EC2 t1-nano.
         </p>
-        <Taglist tags={['Docker', 'Node.js', 'Typescript', 'React.js', 'Fastify']} />
+        <Taglist tags={[
+          'Docker', 'Node.js', 'Typescript', 'React.js', 'Fastify'
+        ]} />
       </>
     ], [
       <Experience from='2018-10' to='2019-03' role='Web developer' employer={['Remiz LTD']} />,
@@ -101,14 +109,16 @@ export const Body = () => <main className='Body'>
           Added features and fixed bugs in enterprise-scale codebase.
           Optimized queries to support large volumes of traffic and data.
         </p>
-        <Taglist tags={['C#', 'ASP.NET Core MVC', 'Entity Framework']} />
+        <Taglist tags={[
+          'C#', 'ASP.NET Core MVC', 'Entity Framework', 'Linq', 'Layered architecture'
+        ]} />
       </>
     ], [
       <Experience from="2016-06" to="2016-08" role="Web developer" employer={['N-ware']} />,
       <>
         <p>
-          Planned and executed i18n for company website. Contributed to mathematical foundations for
-          global navigation system.
+          Planned and implemented i18n for company website. Contributed to mathematical foundations for
+          global naval navigation system.
         </p>
         <Taglist tags={['C#', 'MODX', 'PHP']} />
       </>
@@ -136,7 +146,7 @@ export const Body = () => <main className='Body'>
       'Python', 'Ruby', 'Rust', 
       "Rush.js", "AWS", "React-native", "Express.js",
       "PHP", "WordPress", "MODX",
-      'C#', 'ASP.NET Core MVC', 'Entity Framework'
+      'C#', 'ASP.NET Core MVC', 'Entity Framework', 'Linq', 'Layered architecture'
     ]} />
   </>}>
       <Dictionary>{[

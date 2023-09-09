@@ -29698,7 +29698,7 @@
 
 	var ReactDOM = reactDom.exports;
 
-	___$insertStylesToHeader("@import url(\"https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap\");\nh2 {\n  margin: 0 0;\n}\n\n.Body {\n  position: relative;\n  background: white;\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  overflow: hidden;\n  font-family: sans-serif;\n}\n@media screen {\n  .Body {\n    width: 21cm;\n    height: 29.7cm;\n  }\n}\n@media print {\n  .Body {\n    width: 100vw;\n    height: 100vh;\n  }\n}\n.Body a {\n  color: #559;\n  text-decoration: none;\n  font-style: unset;\n}\n.Body p {\n  margin: 0;\n  margin-bottom: 0.5em;\n}\n.Body .header {\n  padding: 5px 30px 10px 30px;\n  background: #333;\n  color: white;\n  text-align: right;\n}\n.Body .header address {\n  display: inline-block;\n  font-style: normal;\n}\n.Body .header address:not(:last-of-type) {\n  padding-right: 10px;\n}\n.Body .header address:not(:first-of-type) {\n  padding-left: 10px;\n}\n.Body .header a {\n  color: inherit;\n}\n.Body .header h1 {\n  float: left;\n  font-family: \"Oswald\", sans-serif;\n  text-transform: uppercase;\n  margin: 0;\n  padding: 0;\n  margin-left: 5px;\n}\n.Body .header aside {\n  text-align: left;\n  position: absolute;\n  top: 10px;\n  left: 15px;\n  width: 50%;\n}\n.Body .header aside dl {\n  margin: 0px;\n}\n.Body .header aside dl span {\n  display: table-row;\n}\n.Body .header aside dl span dt, .Body .header aside dl span dd {\n  display: table-cell;\n}\n.Body .header aside dl span dt {\n  font-weight: 700;\n  font-style: italic;\n  padding-right: 15px;\n}\n.Body .education {\n  padding-right: 0;\n}\n.Body .education > main > article > header {\n  border-top-left-radius: 1000px;\n  border-bottom-left-radius: 1000px;\n  background-color: #d8d8f4;\n}\n.Body .education > main > article > header h3 {\n  display: inline-block;\n  grid-area: name;\n  padding: 0px 1em 3px 0.5em;\n  margin: 0;\n}\n.Body .education > main > article > header .duration {\n  grid-area: duration;\n}\n.Body .education > main > article > header .overall {\n  grid-area: overall;\n  padding-right: 1em;\n}\n.Body .education > main > article > header .Institute {\n  grid-area: institute;\n}\n.Body .education > main > article > main > p:last-child {\n  margin-bottom: 0;\n}\n.Body .this-cv {\n  padding: 5px 15px;\n  background-color: #333 !important;\n  color: white;\n  position: absolute;\n  display: block;\n  left: 0;\n  bottom: 0;\n  width: inherit;\n  box-sizing: border-box;\n}\n.Body .this-cv a {\n  color: #68f;\n}");
+	___$insertStylesToHeader("@import url(\"https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap\");\n.Body {\n  position: relative;\n  background: white;\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  overflow: hidden;\n  font-family: sans-serif;\n}\n@media screen {\n  .Body {\n    width: 21cm;\n    height: 29.7cm;\n  }\n}\n@media print {\n  .Body {\n    width: 100vw;\n    height: 100vh;\n  }\n}\n.Body a {\n  color: #559;\n  text-decoration: none;\n  font-style: unset;\n}\n.Body p {\n  margin: 0;\n  margin-bottom: 0.2em;\n}\n.Body h2 {\n  margin: 0 0;\n}\n.Body .header {\n  padding: 5px 30px 10px 30px;\n  background: #333;\n  color: white;\n  text-align: right;\n}\n.Body .header address {\n  display: inline-block;\n  font-style: normal;\n}\n.Body .header address:not(:last-of-type) {\n  padding-right: 10px;\n}\n.Body .header address:not(:first-of-type) {\n  padding-left: 10px;\n}\n.Body .header a {\n  color: inherit;\n}\n.Body .header h1 {\n  float: left;\n  font-family: \"Oswald\", sans-serif;\n  text-transform: uppercase;\n  margin: 0;\n  padding: 0;\n  margin-left: 5px;\n}\n.Body .header aside {\n  text-align: left;\n  position: absolute;\n  top: 10px;\n  left: 15px;\n  width: 50%;\n}\n.Body .header aside dl {\n  margin: 0px;\n}\n.Body .header aside dl span {\n  display: table-row;\n}\n.Body .header aside dl span dt, .Body .header aside dl span dd {\n  display: table-cell;\n}\n.Body .header aside dl span dt {\n  font-weight: 700;\n  font-style: italic;\n  padding-right: 15px;\n}\n.Body .education {\n  padding-right: 0;\n}\n.Body .education > main > article > header {\n  border-top-left-radius: 1000px;\n  border-bottom-left-radius: 1000px;\n  background-color: #d8d8f4;\n}\n.Body .education > main > article > header h3 {\n  display: inline-block;\n  grid-area: name;\n  padding: 0px 1em 3px 0.5em;\n  margin: 0;\n}\n.Body .education > main > article > header .duration {\n  grid-area: duration;\n}\n.Body .education > main > article > header .overall {\n  grid-area: overall;\n  padding-right: 1em;\n}\n.Body .education > main > article > header .Institute {\n  grid-area: institute;\n}\n.Body .education > main > article > main > p:last-child {\n  margin-bottom: 0;\n}\n.Body .this-cv {\n  padding: 5px 15px;\n  background-color: #333 !important;\n  color: white;\n  position: absolute;\n  display: block;\n  left: 0;\n  bottom: 0;\n  width: inherit;\n  box-sizing: border-box;\n}\n.Body .this-cv a {\n  color: #68f;\n}");
 
 	function Anchor({ to: to }) {
 	    return React.createElement("a", { href: `https://${to}`, target: "_blank" }, to);
@@ -29727,7 +29727,7 @@
 	    React.createElement("dt", null, key),
 	    React.createElement("dd", null, value))));
 
-	___$insertStylesToHeader(".Section {\n  display: flex;\n  flex-direction: column;\n  padding: 2px 20px 2px 10px;\n}\n.Section:nth-child(2n) {\n  background: #eef;\n}\n.Section.notitle {\n  padding-top: 10px;\n}\n.Section > header {\n  flex: 0 0 auto;\n  display: flex;\n  margin: 0;\n  padding: 0;\n}\n.Section > header > h2 {\n  margin-right: 20px;\n  font-family: \"Oswald\", sans-serif;\n  text-transform: uppercase;\n  break-inside: avoid;\n  flex: 0 0 auto;\n}\n.Section > header > aside {\n  flex: 1 1 auto;\n}\n.Section > main {\n  flex: 1 1 auto;\n}\n.Section:not(.inline) {\n  flex-direction: column;\n}\n.Section:not(.inline) > header {\n  flex-direction: row;\n}\n.Section.inline {\n  padding-right: 0;\n  flex-direction: row;\n}\n.Section.inline > header {\n  flex-direction: column;\n}");
+	___$insertStylesToHeader(".Section {\n  display: flex;\n  flex-direction: column;\n  padding: 2px 20px 2px 10px;\n}\n.Section:nth-child(2n) {\n  background: #eef;\n}\n.Section.notitle {\n  padding-top: 5px;\n}\n.Section > header {\n  flex: 0 0 auto;\n  display: flex;\n  margin: 0;\n  padding: 0;\n}\n.Section > header > h2 {\n  margin-right: 20px;\n  font-family: \"Oswald\", sans-serif;\n  text-transform: uppercase;\n  break-inside: avoid;\n  flex: 0 0 auto;\n}\n.Section > header > aside {\n  flex: 1 1 auto;\n}\n.Section > main {\n  flex: 1 1 auto;\n}\n.Section:not(.inline) {\n  flex-direction: column;\n}\n.Section:not(.inline) > header {\n  flex-direction: row;\n}\n.Section.inline {\n  padding-right: 0;\n  flex-direction: row;\n}\n.Section.inline > header {\n  flex-direction: column;\n}");
 
 	const Section = ({ title, compact, meta, children, className }) => React.createElement(React.Fragment, null,
 	    React.createElement("section", { className: classList('Section', compact && 'inline', className, title ? false : 'notitle') },
@@ -29736,7 +29736,7 @@
 	            meta ? React.createElement("aside", null, meta) : null) : null,
 	        React.createElement("main", null, children)));
 
-	___$insertStylesToHeader(".Timeline {\n  --head-height: 1.5em;\n  --spacing: 10px;\n  --line-size: 2px;\n  --ball-size: 10px;\n}\n.Timeline aside {\n  position: relative;\n  margin-left: var(--spacing);\n  padding-left: var(--spacing);\n  border-left: var(--line-size) solid;\n  border-color: var(--decor);\n}\n.Timeline aside::before {\n  content: \"\";\n  position: absolute;\n  top: calc(var(--head-height) / 2 - var(--ball-size) / 2);\n  left: calc(0px - var(--line-size) / 2 - var(--ball-size) / 2);\n  width: var(--ball-size);\n  height: var(--ball-size);\n  background-color: black;\n  border-radius: 100000px;\n}\n.Timeline aside header {\n  background: #ddf;\n  position: relative;\n  height: var(--head-height);\n  margin-left: calc(var(--head-height) / 2);\n  margin-right: 20px;\n}\n.Timeline aside header::before {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  background: inherit;\n  --diag: calc(var(--head-height) / 1.4142135624);\n  width: var(--diag);\n  height: var(--diag);\n  transform-origin: 0 0;\n  transform: rotate(45deg);\n  z-index: 0;\n}\n.Timeline aside header > * {\n  z-index: 1;\n  position: relative;\n}\n.Timeline aside main {\n  padding-bottom: 10px;\n}\n.Timeline aside main > :last-child {\n  margin-bottom: 0;\n}");
+	___$insertStylesToHeader(".Timeline {\n  --head-height: 1.4em;\n  --spacing: 10px;\n  --line-size: 2px;\n  --ball-size: 10px;\n}\n.Timeline aside {\n  position: relative;\n  margin-left: var(--spacing);\n  padding-left: var(--spacing);\n  border-left: var(--line-size) solid;\n  border-color: var(--decor);\n}\n.Timeline aside::before {\n  content: \"\";\n  position: absolute;\n  top: calc(var(--head-height) / 2 - var(--ball-size) / 2);\n  left: calc(0px - var(--line-size) / 2 - var(--ball-size) / 2);\n  width: var(--ball-size);\n  height: var(--ball-size);\n  background-color: black;\n  border-radius: 100000px;\n}\n.Timeline aside header {\n  background: #ddf;\n  position: relative;\n  height: var(--head-height);\n  margin-left: calc(var(--head-height) / 2);\n  margin-right: 20px;\n}\n.Timeline aside header::before {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  background: inherit;\n  --diag: calc(var(--head-height) / 1.4142135624);\n  width: var(--diag);\n  height: var(--diag);\n  transform-origin: 0 0;\n  transform: rotate(45deg);\n  z-index: 0;\n}\n.Timeline aside header > * {\n  z-index: 1;\n  position: relative;\n}\n.Timeline aside main {\n  padding-bottom: 5px;\n}\n.Timeline aside main > :last-child {\n  margin-bottom: 0;\n}");
 
 	const Timeline = ({ children }) => React.createElement("section", { className: "Timeline" }, children.map(([head, body]) => React.createElement("aside", null,
 	    React.createElement("header", null, head),
@@ -29802,7 +29802,7 @@
 	                "Rust crates: ",
 	                React.createElement(Anchor, { to: "crates.io/users/lbfalvy" }))) },
 	        React.createElement(Projects, null, [
-	            ["Orchid", 'lbfalvy/orchid', ["Rust"], React.createElement(React.Fragment, null, "An experimental interpreted pure functional programming language")],
+	            ["Orchid", 'lbfalvy/orchid', ["Rust"], React.createElement(React.Fragment, null, "An experimental interpreted pure functional programming language.")],
 	            ["Bound", "lbfalvy/bound", ["Rust"], React.createElement(React.Fragment, null, "Generic container to return borrowing types like lock guards")],
 	            ["Autocaddy", "lbfalvy/autocaddy", ["Linux", "Docker", "Bash"], React.createElement(React.Fragment, null, "Automatic TLS terminator and reverse proxy for prototyping")],
 	            ["mini-events", "lbfalvy/mini-events", ["Typescript"], React.createElement(React.Fragment, null, "Convenient event interface, implementation and transformer library")],
@@ -29813,30 +29813,34 @@
 	        React.createElement(Timeline, null, [[
 	                React.createElement(Experience, { from: "2022-12", to: "2023-02", role: "React Developer", employer: ["Ruuby LTD.", "ruuby.com"] }),
 	                React.createElement(React.Fragment, null,
-	                    React.createElement("p", null, "Added features and improved code quality in mobile app and API server with a scrum team"),
+	                    React.createElement("p", null, "In a scrum team, added features and improved code quality of appointment manager mobile app and API server. Established functional design patterns to improve analysis and catch bugs."),
 	                    React.createElement(Taglist, { tags: [
 	                            "Docker", "Rush.js", "AWS", "Node.js", "Typescript",
 	                            "React.js", "React-native", "Express.js"
 	                        ] }))
 	            ], [
-	                React.createElement(Experience, { from: "2022-04", to: "2022-11", role: "Digital Experience", employer: ["University of Surrey Students' Union", 'ussu.co.uk'] }),
+	                React.createElement(Experience, { from: "2022-04", to: "2022-11", role: "Wordpress Developer", employer: ["University of Surrey Students' Union", 'ussu.co.uk'] }),
 	                React.createElement(React.Fragment, null,
-	                    React.createElement("p", null, "Collected business objectives, designed and implemented optimal content structure, optimized Wordpress site for an underpowered VPS."),
+	                    React.createElement("p", null, "Collected business objectives, designed and implemented optimal content structure in public-facing knowledge base. Optimized Wordpress site for deployment on an underpowered VPS."),
 	                    React.createElement(Taglist, { tags: ["PHP", "WordPress"] }))
 	            ], [
 	                React.createElement(Experience, { from: '2020-02', to: '2020-09', role: 'Web developer', employer: ['Research project at Eötvös Loránd University'] }),
 	                React.createElement(React.Fragment, null,
-	                    React.createElement("p", null, "Managed and developed highly interactive PWA through entire project lifecycle. Contact with client throughout development process."),
-	                    React.createElement(Taglist, { tags: ['Docker', 'Node.js', 'Typescript', 'React.js', 'Fastify'] }))
+	                    React.createElement("p", null, "Managed and developed interactive real-time PWA with user-defined content structure. Built proof-of-concepts, collected feedback and implemented rapidly evolving requirements through entire project lifecycle. Supported public launch with 1000 concurrent user spike without downtime on an EC2 t1-nano."),
+	                    React.createElement(Taglist, { tags: [
+	                            'Docker', 'Node.js', 'Typescript', 'React.js', 'Fastify'
+	                        ] }))
 	            ], [
 	                React.createElement(Experience, { from: '2018-10', to: '2019-03', role: 'Web developer', employer: ['Remiz LTD'] }),
 	                React.createElement(React.Fragment, null,
 	                    React.createElement("p", null, "Added features and fixed bugs in enterprise-scale codebase. Optimized queries to support large volumes of traffic and data."),
-	                    React.createElement(Taglist, { tags: ['C#', 'ASP.NET Core MVC', 'Entity Framework'] }))
+	                    React.createElement(Taglist, { tags: [
+	                            'C#', 'ASP.NET Core MVC', 'Entity Framework', 'Linq', 'Layered architecture'
+	                        ] }))
 	            ], [
 	                React.createElement(Experience, { from: "2016-06", to: "2016-08", role: "Web developer", employer: ['N-ware'] }),
 	                React.createElement(React.Fragment, null,
-	                    React.createElement("p", null, "Planned and executed i18n for company website. Contributed to mathematical foundations for global navigation system."),
+	                    React.createElement("p", null, "Planned and implemented i18n for company website. Contributed to mathematical foundations for global naval navigation system."),
 	                    React.createElement(Taglist, { tags: ['C#', 'MODX', 'PHP'] }))
 	            ]])),
 	    React.createElement(Section, { className: "education", title: 'education', compact: true },
@@ -29853,7 +29857,7 @@
 	                    'Python', 'Ruby', 'Rust',
 	                    "Rush.js", "AWS", "React-native", "Express.js",
 	                    "PHP", "WordPress", "MODX",
-	                    'C#', 'ASP.NET Core MVC', 'Entity Framework'
+	                    'C#', 'ASP.NET Core MVC', 'Entity Framework', 'Linq', 'Layered architecture'
 	                ] })) },
 	        React.createElement(Dictionary, null, [
 	            [React.createElement(Taglist, { inline: true, tags: ['Linux'] }), 'Daily driver since 2016'],

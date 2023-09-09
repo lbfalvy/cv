@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
 @import './a4.scss';
 
-h2 {
-  margin: 0 0;
-}
 
 .Body {
   position: relative;
@@ -21,7 +18,11 @@ h2 {
 
   p {
     margin: 0;
-    margin-bottom: .5em;
+    margin-bottom: .2em;
+  }
+  
+  h2 {
+    margin: 0 0;
   }
 
   // Leftover rules for sections

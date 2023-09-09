@@ -1,7 +1,7 @@
 @use 'sass:math';
 
 .Timeline {
-  --head-height: 1.5em;
+  --head-height: 1.4em;
   --spacing: 10px;
   --line-size: 2px;
   --ball-size: 10px;
@@ -49,7 +49,7 @@
       }
     }
     main {
-      padding-bottom: 10px;
+      padding-bottom: 5px;
       &> :last-child {
         margin-bottom: 0;
       }
