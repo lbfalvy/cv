@@ -38,3 +38,13 @@
     }
   }
 }
+
+.Spacer {
+  flex: 1 0 auto;
+  @media screen {
+    background-color: #844;
+  }
+  @media print {
+    background-color: transparent;
+  }
+}

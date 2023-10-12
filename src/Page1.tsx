@@ -1,10 +1,9 @@
-import React from "react";
-import './body.scss';
+import './Page1.scss';
 import Anchor from "./Anchor";
 import { Temporal } from "@js-temporal/polyfill";
 import { Taglist } from "./Taglist";
 import { Dictionary } from "./Dictionary";
-import { Section } from "./Section";
+import { Section, Spacer } from "./Section";
 import { Timeline } from "./Timeline";
 import { Timespan } from "./Timespan";
 import { Institute } from "./Institute";
@@ -12,11 +11,7 @@ import { Experience } from "./Experience";
 import { Projects } from "./Projects";
 import { Unit } from "./Unit";
 
-// const search = new URLSearchParams(window.location.search)
-
-document.title = `Lawrence Bethlenfalvy CV`
-
-export const Body = () => <main className='Body'>
+export const Page1 = () => <main className='Page1'>
   <header className="header">
     <h1>Lawrence Bethlenfalvy</h1>
     <address>London, UK</address>
@@ -26,10 +21,10 @@ export const Body = () => <main className='Body'>
   </header>
   <Section>
     <p>
-      I'm very enthusiastic about open source and have many projects on Github.
-      I like the certainty of static typing so my language of choice is Typescript or Rust,
-      but I find my way around many toolsets and like to learn new ones.
-      I graduated recently.
+      I'm active in open source and have several throrughly tested and documented projects on Github.
+      I strive to ensure total clarity in requirements as well as code, so my language of choice is
+      usually Typescript or Rust.
+      I know many languages and I'm quick to learn new ones.
     </p>
   </Section>
   <Section title="Projects" meta={<>
@@ -57,6 +52,22 @@ export const Body = () => <main className='Body'>
         Custom context menu and dropdown with an elegant API
       </>]
     ]}</Projects>
+  </Section>
+  <Section className="education" compact>
+    <article>
+      <header>
+        <h3>BSc (Computer Science)</h3>
+        <Timespan to="2023" />
+        <Institute title="University of Surrey" website="surrey.ac.uk" />
+      </header>
+      <main>
+        <p>
+          Studied java, Ruby on Rails, IoT, distributed and mainframe computing, verification.
+          Participated in several group projects with dynamic teams.
+          Created a programming language called Orchid.
+        </p>
+      </main>
+    </article>
   </Section>
   <Section title="Experience">
     <Timeline>{[[
@@ -118,26 +129,11 @@ export const Body = () => <main className='Body'>
       <>
         <p>
           Planned and implemented i18n for company website. Contributed to mathematical foundations for
-          global naval navigation system.
+          global nautical navigation system.
         </p>
         <Taglist tags={['C#', 'MODX', 'PHP']} />
       </>
     ]]}</Timeline>
-  </Section>
-  <Section className="education" title='education' compact>
-    <article>
-      <header>
-        <h3>BSc (Computer Science)</h3>
-        <Institute title="University of Surrey" website="surrey.ac.uk" />
-      </header>
-      <main>
-        <p>
-          Practiced project management, studied java, Ruby on Rails, IoT,
-          distributed and mainframe computing, verification.
-          Created a programming language called Orchid.
-        </p>
-      </main>
-    </article>
   </Section>
   <Section title='Skills' meta={<>
     <Taglist tags={[
@@ -158,6 +154,7 @@ export const Body = () => <main className='Body'>
         ]
       ]}</Dictionary>
   </Section>
+  <Spacer />
   <Section className="this-cv">
     <p>
       This CV is written in React. The latest version is available online

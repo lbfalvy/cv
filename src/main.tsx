@@ -1,8 +1,8 @@
 import ReactDOM from 'react-dom'
-import React from 'react'
-import { Body } from './body'
+import { Page1 } from './Page1'
 import { Options } from './Options'
-import './index.scss'
+import './main.scss'
+import { Page2 } from './Page2'
 
 function getRoot() {
   const old = document.getElementById('root')
@@ -13,7 +13,10 @@ function getRoot() {
   return root
 }
 
+document.title = `Lawrence Bethlenfalvy CV`
+
 ReactDOM.render(<>
-  <Body />
+  <Page1 />
+  <Page2 />
   <Options />
 </>, getRoot())

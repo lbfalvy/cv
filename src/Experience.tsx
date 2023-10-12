@@ -1,4 +1,3 @@
-import React from "react";
 import { Institute } from "./Institute";
 import { Timespan } from "./Timespan";
 import './Experience.scss';

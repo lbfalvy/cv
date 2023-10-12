@@ -1,30 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
-@import './a4.scss';
+@import './page.scss';
 
-
-.Body {
-  position: relative;
-  background: white;
-  @include a4;
-  font-family: sans-serif;
-  $head-bg: #333;
-
-  // General rules
-  a {
-    color: #559;
-    text-decoration: none;
-    font-style: unset;
-  }
-
-  p {
-    margin: 0;
-    margin-bottom: .2em;
-  }
-  
-  h2 {
-    margin: 0 0;
-  }
-
+.Page1 {
+  @include page;
   // Leftover rules for sections
   .header {
     padding: 5px 30px 10px 30px;
@@ -72,9 +49,13 @@
     & > main {
       & > article {
         & > header {
+          address, .Timespan {
+            color: hsl(0, 0%, 15%);
+          }
           border-top-left-radius: 1000px;
           border-bottom-left-radius: 1000px;
-          background-color: #d8d8f4;
+          background-color: hsl(240, 40%, 87%);
+          // background-color: #d8d8f4;
           h3 {
             display: inline-block;
             grid-area: name;
@@ -105,10 +86,10 @@
     padding: 5px 15px;
     background-color: $head-bg !important;
     color: white;
-    position: absolute;
+    // position: absolute;
     display: block;
-    left: 0;
-    bottom: 0;
+    // left: 0;
+    // bottom: 0;
     width: inherit;
     box-sizing: border-box;
     a {

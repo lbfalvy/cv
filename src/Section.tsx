@@ -19,3 +19,5 @@ export const Section = ({ title, compact, meta, children, className }: {
     </main>
   </section>
 </>
+
+export const Spacer = () => <div className="Spacer" />
