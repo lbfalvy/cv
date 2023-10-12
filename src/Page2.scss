@@ -2,4 +2,19 @@
 
 .Page2 {
   @include page;
+  .header {
+    padding: 5px 30px 10px 30px;
+    background: $head-bg;
+    color: white;
+    text-align: right;
+    a { color: inherit; }
+    h1 {
+      float: left;
+      font-family: 'Oswald', sans-serif;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 0;
+      margin-left: 5px;
+    }
+  }
 }

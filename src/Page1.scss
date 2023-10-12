@@ -23,26 +23,6 @@
       padding: 0;
       margin-left: 5px;
     }
-    aside {
-      text-align: left;
-      position: absolute;
-      top: 10px;
-      left: 15px;
-      width: 50%;
-      dl {
-        margin: 0px;
-        span {
-          display: table-row;
-          
-          dt, dd { display: table-cell; }
-          dt {
-            font-weight: 700;
-            font-style: italic;
-            padding-right: 15px;
-          }
-        }
-      }
-    }
   }
   .education {
     padding-right: 0;
