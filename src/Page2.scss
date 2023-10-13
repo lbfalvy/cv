@@ -3,11 +3,9 @@
 .Page2 {
   @include page;
   .header {
+    @include dark;
     padding: 5px 30px 10px 30px;
-    background: $head-bg;
-    color: white;
     text-align: right;
-    a { color: inherit; }
     h1 {
       float: left;
       font-family: 'Oswald', sans-serif;
@@ -16,5 +14,24 @@
       padding: 0;
       margin-left: 5px;
     }
+  }
+
+  .Section > header > aside > * {
+    display: inline-block;
+    &.Taglist {
+      margin-right: 10px;
+    }
+  }
+
+
+  .this-cv {
+    padding: 5px 20px 20px;
+    @include dark;
+    // position: absolute;
+    display: block;
+    // left: 0;
+    // bottom: 0;
+    width: inherit;
+    box-sizing: border-box;
   }
 }

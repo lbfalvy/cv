@@ -21,13 +21,21 @@
   overflow: hidden;
 }
 
-$head-bg: #333;
+@mixin dark {
+  background-color: #333;
+  color: white;
+  a { color: #68f; }
+}
 
 @mixin page {
 
   display: flex;
   flex-direction: column;
   justify-content: stretch;
+
+  & > *:first-child {
+    padding-top: 20px !important;
+  }
 
   & > :not(.Spacer) {
     flex: 0 0 auto;

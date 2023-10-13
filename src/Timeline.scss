@@ -28,7 +28,7 @@
       position: relative;
       height: var(--head-height);
       margin-left: calc(var(--head-height) / 2);
-      margin-right: 20px;
+      margin-right: -20px;
       &::before {
         content: "";
         position: absolute;

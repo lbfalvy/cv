@@ -5,8 +5,7 @@
   // Leftover rules for sections
   .header {
     padding: 5px 30px 10px 30px;
-    background: $head-bg;
-    color: white;
+    @include dark;
     text-align: right;
     address {
       display: inline-block;
@@ -14,7 +13,6 @@
     }
     address:not(:last-of-type) { padding-right: 10px; }
     address:not(:first-of-type) { padding-left: 10px; }
-    a { color: inherit; }
     h1 {
       float: left;
       font-family: 'Oswald', sans-serif;
@@ -55,25 +53,12 @@
         }
         & > main {
           // padding-bottom: 5px;
+          padding-right: 20px;
           & > p:last-child {
             margin-bottom: 0;
           }
         }
       }
-    }
-  }
-  .this-cv {
-    padding: 5px 15px;
-    background-color: $head-bg !important;
-    color: white;
-    // position: absolute;
-    display: block;
-    // left: 0;
-    // bottom: 0;
-    width: inherit;
-    box-sizing: border-box;
-    a {
-      color: #68f;
     }
   }
 }
