@@ -18,7 +18,7 @@ export const Page1 = () => <main className='Page1'>
   </header>
   <Section>
     <p>
-      I'm active in open source and have several throrughly tested and documented projects on Github. I strive to ensure total clarity in requirements as well as code, so my language of choice is usually Typescript or Rust, statically typed and somewhat function-oriented languages. I know many languages and tools and I'm quick to learn new ones.
+      I'm effective on my own but I work well in a team and like to learn about alternative viewpoints. I often also take a support role, where diverse horizontal knowledge, research skills and effective communication allow me to understand the problem quickly and offer constructive input. I strive to ensure total clarity in requirements as well as code. I like learning new tools and I do so quickly.
     </p>
   </Section>
   <Section className="education" compact>
