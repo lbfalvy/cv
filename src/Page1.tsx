@@ -18,7 +18,7 @@ export const Page1 = () => <main className='Page1'>
   </header>
   <Section>
     <p>
-      I'm effective on my own but I work well in a team and like to learn about alternative viewpoints. I often also take a support role, where diverse horizontal knowledge, research skills and effective communication allow me to understand the problem quickly and offer constructive input. I strive to ensure total clarity in requirements as well as code. I like learning new tools and I do so quickly.
+      I am effective independently but work well in a team and like to learn about alternative approaches. I also often take a support role, where diverse horizontal knowledge, research skills and effective communication allow me to understand the problem quickly and offer constructive input. I strive to ensure total clarity in requirements as well as code. I like learning new tools and do so quickly.
     </p>
   </Section>
   <Section className="education" compact>
