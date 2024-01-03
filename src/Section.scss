@@ -19,7 +19,13 @@
       break-inside: avoid;
       flex: 0 0 auto
     }
-    & > aside { flex: 1 1 auto }
+    & > aside {
+      display: flex;
+      flex: 1 1 auto;
+      flex-direction: row;
+      align-content: center;
+      align-items: center;
+    }
     margin: 0; padding: 0;
   }
   & > main {

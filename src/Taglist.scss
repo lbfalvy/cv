@@ -1,20 +1,21 @@
 .Taglist {
   margin: 0;
   padding: 0;
-  // padding-top: 1px;
-  // padding-bottom: 2px;
-
+  // display: flex;
+  // flex-direction: row;
+  // align-content: center;
   &.inline {
     display: inline-block;
   }
-
   &>li {
     line-height: 1.1em;
     list-style: none;
     display: inline-block;
     font-size: .9em;
     padding: 2px .5em;
-    margin-right: 3px;
+    &:not(:last-child) {
+      margin-right: 3px;
+    }
     background-color: #79a;
     color: white;
     border-radius: 10000px;
