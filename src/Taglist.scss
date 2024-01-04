@@ -8,9 +8,23 @@
     display: inline-block;
   }
   &>li {
+    & > * {
+      display: inline-block;
+
+    }
+    & > img {
+      height: 1em;
+      transform: translateY(1.5px);
+      margin-right: 3px;
+    }
+    &[data-lang=rust i] > img {
+      // example language filter
+    }
+    margin-bottom: 2px;
     line-height: 1.1em;
     list-style: none;
     display: inline-block;
+    flex-direction: row;
     font-size: .9em;
     padding: 2px .5em;
     &:not(:last-child) {
