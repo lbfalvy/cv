@@ -51,7 +51,7 @@ export const network = "Network programming";
 
 export type Tag = readonly [string, string] | string;
 
-export const [setShowLogos, showLogos] = variable(false);
+export const [setShowLogos, showLogos] = variable(true);
 
 export function Taglist({ tags, inline }: {
   tags: Tag[]

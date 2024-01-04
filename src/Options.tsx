@@ -4,7 +4,7 @@ import { variable } from "@lbfalvy/mini-events"
 import { useVariable } from "./useVariable";
 import { setShowLogos, showLogos } from "./Taglist";
 
-const [setFocus, focus] = variable<"rust" | "js">("rust");
+const [setFocus, focus] = variable<"rust" | "js">("js");
 const rotateFocus = () => setFocus(focus.get() == "js" ? "rust" : "js");
 const toggleLogos = () => setShowLogos(!showLogos.get());
 
