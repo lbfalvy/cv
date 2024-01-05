@@ -13,8 +13,10 @@ export const php_url = "https://www.php.net/images/logos/new-php-logo.svg";
 export const wp_logo = "https://s.w.org/style/images/about/WordPress-logotype-wmark.png";
 export const python_logo = "https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg";
 export const ruby_logo = "https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg";
+export const elixir_logo = "https://github.com/elixir-lang/elixir-lang.github.com/blob/main/downloads/logos/elixir-drop-only.png?raw=true";
 
 // Tags with external logos
+export const elixir = [elixir_logo, "Elixir"] as const;
 export const rust = [rust_logo, "Rust"] as const;
 export const aws = [aws_logo, "AWS"] as const;
 export const linux = [tux, "Linux"] as const;
