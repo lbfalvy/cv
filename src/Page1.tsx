@@ -1,6 +1,6 @@
 import './Page1.scss';
 import Anchor from "./Anchor";
-import { Taglist, aspnetcore, aws, csharp, docker, entity_framework, express, fastify, git, layered_arch, linq, linux, modx, node, php, automate, python, react, react_native, ruby, rush, rust, sharepoint, typescript, wordpress, sql, oop, fp } from "./Taglist";
+import { Taglist, aspnetcore, aws, csharp, docker, entity_framework, express, fastify, git, layered_arch, linq, linux, modx, node, php, automate, python, react, react_native, ruby, rush, rust, sharepoint, typescript, wordpress, sql, oop, fp, java, bash } from "./Taglist";
 import { Dictionary } from "./Dictionary";
 import { Section, Spacer } from "./Section";
 import { Timeline } from "./Timeline";
@@ -56,7 +56,7 @@ export const Page1 = () => <main className='Page1'>
     </Timeline>
   </Section>
   <Section title='Skills' meta={<>
-    <Taglist tags={[rust, rush, aws, express, react_native, php, modx, csharp, aspnetcore, entity_framework, linq, layered_arch, sql, oop, fp, python, ruby, wordpress]} />
+    <Taglist tags={[rust, java, python, csharp, ruby, react_native, bash, aws, express, rush, php, aspnetcore, entity_framework, linq, layered_arch, sql, oop, fp, modx, wordpress]} />
   </>}>
       <Dictionary>{[
         [

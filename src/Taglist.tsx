@@ -25,6 +25,7 @@ export const python = [python_logo, "Python"] as const;
 export const ruby = [ruby_logo, "Ruby"] as const;
 
 // Tags with local SVG logos
+export const java = ["./logos/java.svg", "Java"] as const;
 export const docker = ["./logos/docker.svg", "Docker"] as const;
 export const node = ["./logos/node-js.svg", "Node.js"] as const;
 export const react = ["./logos/react.svg", "React.js"] as const;
