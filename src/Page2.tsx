@@ -20,9 +20,15 @@ export const Page2 = () => <main className="Page2" >
     <Taglist tags={[rust]} />
     <Anchor to="github.com/lbfalvy/orchid" />
   </>}>
-    <p>My final year project at the University of Surrey was an interpreted functional programming language written in Rust. Implementing the language was a challenge in software architecture and project management, but it is one of the few projects where good design can be appreciated directly, since user experience <em>is</em> developer experience.</p>
+    <p>My final year project at the University of Surrey was an interpreted functional programming language written in Rust. Implementing the language was a challenge in software architecture and project management, but it is one of the few projects where good design can be appreciated directly, since user experience <em>is</em> developer experience. In the years since it has been a testbed for my experiments into managing complexity in large Rust projects.</p>
   </Section>
   {useVariable(focus) == "rust" ? <>
+    <Section title="Orchid LS" meta={<>
+      <Taglist tags={[rust, typescript]} />
+      <Anchor to="github.com/lbfalvy/orchid-ls" />
+    </>}>
+      <p>VSCode plugin for Orchid language support. Editor support is an essential piece of developer experience and Orchid has been designed from first principles to be easy to integrate so this was a logical piece to develop early on.</p>
+    </Section>
     <Section title="Memorize, Substack" meta={<>
       <Taglist inline tags={[rust, fp]} />
       <div style={{ display: "inline flex", flexDirection: "column" }}>
@@ -71,10 +77,10 @@ export const Page2 = () => <main className="Page2" >
   <Section title="website" meta={<>
     <Anchor to="www.lbfalvy.com" />
   </>}>
-    <p>I implemented a simple but versatile framework-agnostic SSG system on my blog using Puppeteer. Articles are written in MDX and split into separate bundles to keep FMP low on every page. This was also my main use case for react-await.</p>
+    <p>A simple but effective blog built on Astro. Articles are written in MDX and has both syntax-highlighting in popular languages with off-the-shelf plugins, and my own experimental language with a custom component. I write about Rust and language development every once in a while.</p>
   </Section>
   <Spacer />
   <Section className="this-cv">
-    <p>This CV is written in React. The latest version is available online at <Anchor to={`www.lbfalvy.com/cv/index.html${location.search}`} />. The code is on github at <Anchor to='github.com/lbfalvy/cv' />. This version was printed at {Temporal.Now.plainDateISO().toString()}.</p>
+    <p>This CV is written in React. The latest version is available online at <Anchor to={`lbfalvy.github.io/cv/index.html${location.search}`} />. The code is on github at <Anchor to='github.com/lbfalvy/cv' />. This version was printed at {Temporal.Now.plainDateISO().toString()}.</p>
   </Section>
 </main>

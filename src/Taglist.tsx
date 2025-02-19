@@ -14,6 +14,7 @@ export const wp_logo = "https://s.w.org/style/images/about/WordPress-logotype-wm
 export const python_logo = "https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg";
 export const ruby_logo = "https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg";
 export const elixir_logo = "https://github.com/elixir-lang/elixir-lang.github.com/blob/main/downloads/logos/elixir-drop-only.png?raw=true";
+export const tsql_logo = "https://www.liblogo.com/img-logo/max/mi437mc37-microsoft-sql-server-logo-microsoft-sql-server-component-prismatic-docs.png"
 
 // Tags with external logos
 export const elixir = [elixir_logo, "Elixir"] as const;
@@ -25,6 +26,7 @@ export const php = [php_url, "PHP"] as const;
 export const wordpress = [wp_logo, "WordPress"] as const;
 export const python = [python_logo, "Python"] as const;
 export const ruby = [ruby_logo, "Ruby"] as const;
+export const tsql = [tsql_logo, "T-SQL"] as const;
 
 // Tags with local SVG logos
 export const java = ["./logos/java.svg", "Java"] as const;
@@ -41,6 +43,8 @@ export const modx = ["./logos/modx.svg", "MODX"] as const;
 export const sharepoint = ["./logos/sharepoint.svg", "SharePoint"] as const;
 export const automate = ["./logos/automate.svg", "Power Automate"] as const;
 export const bash = ["./logos/bash.svg", "Bash"] as const;
+export const powershell = ["./logos/powershell.svg", "Powershell"] as const;
+export const azure_devops = ["./logos/azure-devops.svg", "Azure DevOps"] as const
 
 // Tags with no logos
 export const aspnetcore = "ASP.NET Core MVC";
@@ -51,6 +55,7 @@ export const sql = "SQL";
 export const oop = "Object-oriented programming";
 export const fp = "Functional programming";
 export const network = "Network programming";
+export const wpf = "WPF";
 
 export type Tag = readonly [string, string] | string;
 
