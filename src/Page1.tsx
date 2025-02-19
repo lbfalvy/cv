@@ -69,7 +69,7 @@ export const Page1 = () => <main className='Page1'>
           <>Stack of choice for practical purposes, several projects</>
         ],
         [<Taglist inline tags={[linux]} />, <>Daily driver since 2016</>],
-        [<Taglist inline tags={[rust]} />, <>Main language for side projects since 2024</>],
+        [<Taglist inline tags={[rust]} />, <>Main language for side projects since 2022</>],
       ]}</Dictionary>
   </Section>
   <Spacer />
