@@ -11,11 +11,11 @@ import { Experience } from "./Experience";
 export const Page1 = () => <main className='Page1'>
   <header className="header">
     <h1>Lawrence Bethlenfalvy</h1>
-    <address>London, UK</address>
+    <address>Budapest, HU</address>
     <address><Anchor to='www.lbfalvy.com'/></address>
     <br/>
     <address>lbfalvy@protonmail.com</address>
-    <address>(+44) 7444 416038</address>
+    <address>(+36) 70 701 0546</address>
   </header>
   <Section>
     <p>I am effective independently but work well in a team and like to learn about alternative approaches. I also often take a support role, where diverse horizontal knowledge, research skills and effective communication allow me to understand the problem quickly and offer constructive input. I strive to ensure total clarity in requirements as well as code. I like learning new tools and do so quickly.</p>
