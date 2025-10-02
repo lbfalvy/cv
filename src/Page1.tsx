@@ -10,6 +10,7 @@ import { Experience } from "./Experience";
 
 export const Page1 = () => <main className='Page1'>
   <header className="header">
+    <img className='pfp' src="https://eu2.contabostorage.com/b5fca1793241407290cf2335ba076411:assets/lbfalvy_com/cv-pic-square.jpg" width={100} />
     <h1>Lawrence Bethlenfalvy</h1>
     <address>Budapest, HU</address>
     <address><Anchor to='www.lbfalvy.com'/></address>
@@ -17,7 +18,8 @@ export const Page1 = () => <main className='Page1'>
     <address>lbfalvy@protonmail.com</address>
     <address>(+36) 70 701 0546</address>
   </header>
-  <Section>
+  <Section className='bio'>
+    <div className='circlehack' />
     <p>I am effective independently but work well in a team and like to learn about alternative approaches. I also often take a support role, where diverse horizontal knowledge, research skills and effective communication allow me to understand the problem quickly and offer constructive input. I strive to ensure total clarity in requirements as well as code. I like learning new tools and do so quickly.</p>
   </Section>
   <Section className="education" compact>

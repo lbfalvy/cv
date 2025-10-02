@@ -2,37 +2,72 @@
 
 .Page1 {
   @include page;
+
   // Leftover rules for sections
   .header {
+    position: relative;
     padding: 5px 30px 10px 30px;
     @include dark;
     text-align: right;
+
     address {
       display: inline-block;
       font-style: normal;
     }
-    address:not(:last-of-type) { padding-right: 10px; }
-    address:not(:first-of-type) { padding-left: 10px; }
+
+    address:not(:last-of-type) {
+      padding-right: 10px;
+    }
+
+    address:not(:first-of-type) {
+      padding-left: 10px;
+    }
+
     h1 {
       float: left;
       font-family: 'Oswald', sans-serif;
       text-transform: uppercase;
       margin: 0;
       padding: 0;
-      margin-left: 5px;
+      margin-top: -10px;
+      margin-left: 90px;
+    }
+
+    .pfp {
+      z-index: 100;
+      float: left;
+      position: absolute;
+      left: 20px;
+      bottom: -50px;
+      border-radius: 50%;
     }
   }
+
+  .bio {
+    .circlehack {
+      float: left;
+      height: 100px;
+      width: 200px;
+      shape-outside: circle(45px at 60px -5px);
+    }
+  }
+
   .education {
     padding-right: 0;
-    & > main {
-      & > article {
-        & > header {
-          address, .Timespan {
+
+    &>main {
+      &>article {
+        &>header {
+
+          address,
+          .Timespan {
             color: hsl(0, 0%, 15%);
           }
+
           border-top-left-radius: 1000px;
           border-bottom-left-radius: 1000px;
           background-color: hsl(240, 40%, 87%);
+
           // background-color: #d8d8f4;
           h3 {
             display: inline-block;
@@ -40,21 +75,26 @@
             padding: 0px 1em 3px 0.5em;
             margin: 0;
           }
+
           .duration {
             grid-area: duration;
           }
+
           .overall {
             grid-area: overall;
             padding-right: 1em;
           }
+
           .Institute {
             grid-area: institute;
           }
         }
-        & > main {
+
+        &>main {
           // padding-bottom: 5px;
           padding-right: 20px;
-          & > p:last-child {
+
+          &>p:last-child {
             margin-bottom: 0;
           }
         }
