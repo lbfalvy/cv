@@ -18,7 +18,7 @@ export const Page2 = () => <main className="Page2" >
   </header>
   <Section title="Orchid" meta={<>
     <Taglist tags={[rust]} />
-    <Anchor to="github.com/lbfalvy/orchid" />
+    <Anchor to="git.lbfalvy.com/Orchid/orchid" />
   </>}>
     <p>My final year project at the University of Surrey was an interpreted functional programming language written in Rust. Implementing the language was a challenge in software architecture and project management, but it is one of the few projects where good design can be appreciated directly, since user experience <em>is</em> developer experience. In the years since it has been a testbed for my experiments into managing complexity in large Rust projects.</p>
   </Section>
