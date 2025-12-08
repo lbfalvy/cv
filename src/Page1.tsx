@@ -15,7 +15,7 @@ export const Page1 = () => <main className='Page1'>
     <address>Budapest, HU</address>
     <address><Anchor to='www.lbfalvy.com'/></address>
     <br/>
-    <address>lbfalvy@protonmail.com</address>
+    <address>lbfalvy+cv@protonmail.com</address>
     <address>(+36) 70 701 0546</address>
   </header>
   <Section className='bio'>
