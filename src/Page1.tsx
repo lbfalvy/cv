@@ -20,7 +20,7 @@ export const Page1 = () => <main className='Page1'>
   </header>
   <Section className='bio'>
     <div className='circlehack' />
-    <p>I am effective independently but work well in a team and like to learn about alternative approaches. I also often take a support role, where diverse horizontal knowledge, research skills and effective communication allow me to understand the problem quickly and offer constructive input. I strive to ensure total clarity in requirements as well as code. I like learning new tools and do so quickly.</p>
+    <p>I care deeply about developer experience. I observe how my teammates and I work and what factors help or hinder our flow, with special attention to how our toolchain serves us and how it could serve us better, and develop force-multiplying techniques and tools to improve our effectiveness. In accordance with this, my personal learning efforts focus on static analysis, testing, CI/CD, and a diverse range of programming languages and principles to apply to specific scenarios.</p>
   </Section>
   <Section className="education" compact>
     <article>
@@ -30,33 +30,33 @@ export const Page1 = () => <main className='Page1'>
         <Institute title="University of Surrey" website="surrey.ac.uk" />
       </header>
       <main>
-        <p>Studied java, Ruby on Rails, network programming, IoT, distributed computing with Elixir and mainframe computing with IBM Z-OS and OpenShift, verification. Participated in several group projects with dynamic teams. Created a programming language called Orchid.</p>
+        <p>Studied a variety of languages, network programming, IoT, distributed computing, mainframes and enterprise cloud, verification. Participated in several group projects where I was responsible for the toolchain, infrastructure and CI. Created a programming language called Orchid.</p>
       </main>
     </article>
   </Section>
   <Section title="Experience">
     <Timeline>
       <Experience from="2024-04" role=".NET Developer" employer='Siemens Energy'>
-        <p>Added features and executed large scale refactoring on internal electric engineering design and manufacturing management software</p>
+        <p>Executed large scale refactoring on internal electric engineering design and manufacturing management software to accelerate development work. Developed a plug-in system with which independent teams closer to the stakeholder could deliver individual features</p>
         <Taglist tags={[csharp, wpf, tsql, powershell, azure_devops]} />
       </Experience>
       <Experience from="2022-12" to="2023-02" role="Full-stack React Developer" employer="Ruuby LTD." website="ruuby.com">
-        <p>In a scrum team, added features and improved code quality of appointment manager mobile app and API server. Established functional design patterns to improve static analysis and identify lurking bugs.</p>
+        <p>In a scrum team, developed mobile app for live data processing and associated API server. Established functional design patterns to improve static analysis and debugging experience.</p>
         <Taglist tags={[docker, node, typescript, react, rush, aws, react_native, express]} />
       </Experience>
       <Experience from="2022-04" to="2022-11" role="Wordpress Developer" employer="University of Surrey Students' Union" website='ussu.co.uk'>
-        <p>Collected business objectives, designed and implemented optimal content structure in public-facing knowledge base. Optimized Wordpress site for deployment on an underpowered VPS. Maintained and created Power Automate flows to generate and publish reports from workgroup documents.</p>
+        <p>Individually collected and enacted business objectives for optimal content structure in public-facing knowledge base. Optimized Wordpress site. Utilized low-code flows collaboratively to facilitate public communication from workgroups.</p>
         <Taglist tags={[php, wordpress, sharepoint, automate]} />
       </Experience>
       <Experience from='2020-02' to='2020-09' role='Full-stack Web Developer' employer='Research project at Eötvös Loránd University'>
-        <p>Managed and developed interactive real-time PWA with user-defined content structure. Built proof-of-concepts, collected feedback and implemented rapidly evolving requirements through entire project lifecycle. Supported public launch with 1000 concurrent user spike without friction on an EC2 t1-nano.</p>
+        <p>Single-handedly developed interactive real-time PWA with user-defined content structure. Utilized PoC-s to align with rapidly evolving requirements through entire project lifecycle. Supported public launch spike under severe performance constraints.</p>
         <Taglist tags={[docker, node, typescript, react, fastify]} />
       </Experience>
       <Experience from='2018-10' to='2019-03' role='.NET Developer' employer='Remiz LTD'>
-        <p>Added features and fixed bugs in enterprise-scale codebase. Optimized queries to support large volumes of traffic and data.</p>
+        <p>Completed enterprise webapp, Carefully optimized SQL for large volumes of traffic and data.</p>
         <Taglist tags={[csharp, aspnetcore, entity_framework, linq, layered_arch]} />
       </Experience>
-      <Experience from="2016-06" to="2016-08" role="Web Developer" employer='N-ware'>
+      <Experience from="2016-06" to="2016-08" role="Web Developer Internship" employer='N-ware'>
         <p>Planned and implemented i18n for company website. Contributed to mathematical foundations for global nautical navigation system.</p>
         <Taglist tags={[csharp, modx, php]} />
       </Experience>
@@ -71,7 +71,7 @@ export const Page1 = () => <main className='Page1'>
           <>Stack of choice for practical purposes, several projects</>
         ],
         [<Taglist inline tags={[linux]} />, <>Daily driver since 2016</>],
-        [<Taglist inline tags={[rust]} />, <>Main language for side projects since 2022</>],
+        [<Taglist inline tags={[rust]} />, <>Preferred language for side projects since 2022</>],
       ]}</Dictionary>
   </Section>
   <Spacer />
