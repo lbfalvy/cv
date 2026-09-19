@@ -1,13 +1,13 @@
-@import './page.scss';
+@use './page.scss';
 
 .Page1 {
-  @include page;
+  @include page.page;
 
   // Leftover rules for sections
   .header {
     position: relative;
     padding: 5px 30px 10px 30px;
-    @include dark;
+    @include page.dark;
     text-align: right;
 
     address {

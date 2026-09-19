@@ -4,13 +4,12 @@ import "./Page2.scss";
 import { Section, Spacer } from "./Section";
 import { Taglist, bash, docker, fp, linux, network, react, rust, typescript } from "./Taglist";
 import { Unit } from "./Unit";
-import { useVariable } from "./useVariable";
-import { focus } from "./Options";
 
 export const Page2 = () => <main className="Page2" >
   <header className="header">
     <h1>Portfolio</h1>
     <aside>
+      <Unit>Own gitea: <Anchor to="git.lbfalvy.com" />,</Unit>
       <Unit>Github: <Anchor to="github.com/lbfalvy" />,</Unit>
       <Unit>Node packages: <Anchor to="www.npmjs.com/~lbfalvy" />,</Unit>
       <Unit>Rust crates: <Anchor to="crates.io/users/lbfalvy" /></Unit>
@@ -20,7 +19,7 @@ export const Page2 = () => <main className="Page2" >
     <Taglist tags={[rust]} />
     <Anchor to="git.lbfalvy.com/Orchid/orchid" />
   </>}>
-    <p>My final year project at the University of Surrey was an interpreted functional programming language written in Rust. Implementing the language was a challenge in software architecture and project management, but it is one of the few projects where good design can be appreciated directly, since user experience <em>is</em> developer experience. In the years since it has been a testbed for my experiments into managing complexity in large Rust projects.</p>
+    <p>My long-term personal project is an interpreted functional programming language written in Rust. Implementing the language was a challenge in software architecture and project management, but it is one of the few projects where good design can be appreciated directly, since user experience <em>is</em> developer experience. In the years since it has been a testbed for my experiments into managing complexity in large Rust projects.</p>
   </Section>
   <Section title="Orchid LS" meta={<>
     <Taglist tags={[rust, typescript]} />

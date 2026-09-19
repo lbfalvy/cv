@@ -1,6 +1,6 @@
 import './Page1.scss';
 import Anchor from "./Anchor";
-import { Taglist, aspnetcore, aws, csharp, docker, entity_framework, express, fastify, git, layered_arch, linq, linux, modx, node, php, automate, python, react, react_native, ruby, rush, rust, sharepoint, typescript, wordpress, sql, oop, fp, java, bash, elixir, wpf, tsql, powershell, azure_devops } from "./Taglist";
+import { Taglist, aspnetcore, aws, csharp, docker, entity_framework, express, fastify, git, layered_arch, linq, linux, modx, node, php, automate, python, react, react_native, ruby, rush, rust, sharepoint, typescript, wordpress, sql, java, bash, elixir, wpf, tsql, powershell, azure_devops, cpp } from "./Taglist";
 import { Dictionary } from "./Dictionary";
 import { Section, Spacer } from "./Section";
 import { Timeline } from "./Timeline";
@@ -13,8 +13,8 @@ export const Page1 = () => <main className='Page1'>
     <img className='pfp' src="https://eu2.contabostorage.com/b5fca1793241407290cf2335ba076411:assets/lbfalvy_com/cv-pic-square.jpg" width={100} />
     <h1>Lawrence Bethlenfalvy</h1>
     <address>Budapest, HU</address>
-    <address><Anchor to='www.lbfalvy.com'/></address>
-    <br/>
+    <address><Anchor to='www.lbfalvy.com' /></address>
+    <br />
     <address>lbfalvy+cv@protonmail.com</address>
     <address>(+36) 70 701 0546</address>
   </header>
@@ -37,8 +37,10 @@ export const Page1 = () => <main className='Page1'>
   <Section title="Experience">
     <Timeline>
       <Experience from="2024-04" role=".NET Developer" employer='Siemens Energy'>
-        <p>Executed large scale refactoring on internal electric engineering design and manufacturing management software to accelerate development work. Developed a plug-in system with which independent teams closer to the stakeholder could deliver individual features</p>
-        <Taglist tags={[csharp, wpf, tsql, powershell, azure_devops]} />
+        <p>Executed large scale refactoring on internal electric engineering design and manufacturing management software to accelerate development work. Developed a plug-in system with which independent teams closer to the stakeholder could deliver individual features. Maintained internal tools in React</p>
+        <Taglist tags={[
+          csharp, wpf, tsql, powershell, azure_devops, typescript, react
+        ]} />
       </Experience>
       <Experience from="2022-12" to="2023-02" role="Full-stack React Developer" employer="Ruuby LTD." website="ruuby.com">
         <p>In a scrum team, developed mobile app for live data processing and associated API server. Established functional design patterns to improve static analysis and debugging experience.</p>
@@ -63,16 +65,16 @@ export const Page1 = () => <main className='Page1'>
     </Timeline>
   </Section>
   <Section title='Skills' meta={<>
-    <Taglist tags={[rust, java, python, csharp, ruby, elixir, bash, php, aws, sql, express, react_native, rush, aspnetcore, entity_framework, linq, layered_arch, oop, fp, modx, wordpress]} />
+    <Taglist tags={[rust, java, python, csharp, ruby, elixir, cpp, bash, php, aws, sql, express, react_native, rush, aspnetcore, entity_framework, linq, layered_arch, modx, wordpress]} />
   </>}>
-      <Dictionary>{[
-        [
-          <Taglist inline tags={[docker, node, typescript, react, git, fastify]} />,
-          <>Stack of choice for practical purposes, several projects</>
-        ],
-        [<Taglist inline tags={[linux]} />, <>Daily driver since 2016</>],
-        [<Taglist inline tags={[rust]} />, <>Preferred language for side projects since 2022</>],
-      ]}</Dictionary>
+    <Dictionary>{[
+      [
+        <Taglist inline tags={[docker, node, typescript, react, git, fastify]} />,
+        <>Stack of choice for practical purposes, several projects</>
+      ],
+      [<Taglist inline tags={[linux]} />, <>Daily driver since 2016</>],
+      [<Taglist inline tags={[rust]} />, <>Preferred language for side projects since 2022</>],
+    ]}</Dictionary>
   </Section>
   <Spacer />
 </main>

@@ -1,22 +1,27 @@
-import React from "react"
+import React, { useContext } from "react"
 import './Options.scss'
-import { variable } from "@lbfalvy/mini-events"
-import { useVariable } from "./useVariable";
-import { setShowLogos, showLogos } from "./Taglist";
+import { LogosCx } from "./Taglist";
 
-const [setFocus, focus] = variable<"rust" | "js">("js");
-const rotateFocus = () => setFocus(focus.get() == "js" ? "rust" : "js");
-const toggleLogos = () => setShowLogos(!showLogos.get());
+export type Focus = "rust" | "js";
 
-export { focus };
+const nextFocus = (focus: Focus) => focus == "js" ? "rust" : "js";
 
-export function Options(): React.ReactElement {
-  let foc = useVariable(focus);
-  let logos = useVariable(showLogos);
+export const FocusCx = React.createContext<Focus>("js");
+
+export interface OptionsProps {
+  setLogos(value: boolean): void;
+  setFocus(value: Focus): void;
+}
+
+export function Options({ setLogos, setFocus }: OptionsProps): React.ReactElement {
+  const showLogos = useContext(LogosCx)
+  const focus = useContext(FocusCx);
   return <div className="Options">
     <h1>CV generator</h1>
     <p>This is a template for printing PDFs, not an on-line CV. If you try to print it, this explanatory paragraph disappears, the remaining document fits perfectly on two A4 pages, and the red unused space highlights disappear.</p>
-    <button onClick={rotateFocus}>Focusing on {foc}</button>
-    <button onClick={toggleLogos}>{logos ? "Logos shown" : "No logos on pills"}</button>
+    <button onClick={() => setFocus(nextFocus(focus))}>
+      Focusing on {focus}
+    </button>
+    <button onClick={() => setLogos(!showLogos)}>{showLogos ? "Logos shown" : "No logos on pills"}</button>
   </div>
 }

@@ -1,11 +1,8 @@
-import { classList } from "@lbfalvy/react-utils";
-import React from "react";
+import React, { useContext } from "react";
 import './Taglist.scss';
-import { variable } from "@lbfalvy/mini-events";
-import { useVariable } from "./useVariable";
 
 /// External dependencies
-export const rust_logo = "https://github.com/rust-lang/rust-artwork/blob/master/logo/rust-logo-512x512.png?raw=true";
+export const rust_logo = "https://raw.githubusercontent.com/rust-lang/rust-artwork/refs/heads/main/logo/rust-logo.svg";
 export const aws_logo = "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg";
 export const tux = "https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg";
 export const git_logo = "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.svg";
@@ -45,6 +42,7 @@ export const automate = ["./logos/automate.svg", "Power Automate"] as const;
 export const bash = ["./logos/bash.svg", "Bash"] as const;
 export const powershell = ["./logos/powershell.svg", "Powershell"] as const;
 export const azure_devops = ["./logos/azure-devops.svg", "Azure DevOps"] as const
+export const cpp = ['./logos/cpp.svg', "C++"] as const;
 
 // Tags with no logos
 export const aspnetcore = "ASP.NET Core MVC";
@@ -59,14 +57,14 @@ export const wpf = "WPF";
 
 export type Tag = readonly [string, string] | string;
 
-export const [setShowLogos, showLogos] = variable(true);
+export const LogosCx = React.createContext(true);
 
 export function Taglist({ tags, inline }: {
   tags: Tag[]
   inline?: true
 }): React.ReactElement {
-  const logos = useVariable(showLogos)
-  return <ul className={classList('Taglist', inline && 'inline')}>
+  const logos = useContext(LogosCx)
+  return <ul className={['Taglist', inline && 'inline'].filter(Boolean).join(' ')}>
     {tags.map((tag, i) => Array.isArray(tag)
       ? <li key={i} data-txt={tag[1]}>
         {logos ? <img src={tag[0]} alt={`${tag[1]} logo`} /> : null}

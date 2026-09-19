@@ -1,28 +1,16 @@
-import ReactDOM from 'react-dom'
 import './main.scss'
 import { Body } from './Body'
-import { focus } from './Options'
-import { showLogos } from './Taglist'
+import { createRoot } from 'react-dom/client'
 
 function getRoot() {
   const old = document.getElementById('root')
   if (old) return old
   const root = document.createElement('div')
-  root.id='root'
+  root.id = 'root'
   document.body.append(root)
   return root
 }
 
+const root = createRoot(getRoot());
 
-function setTitle() {
-  document.title = `Lawrence Bethlenfalvy CV ${JSON.stringify({
-    focus: focus.get(),
-    showLogos: showLogos.get()
-  })}`;
-}
-
-focus.changed(setTitle);
-showLogos.changed(setTitle);
-setTitle()
-
-ReactDOM.render(<Body/>, getRoot())
+root.render(<Body />)

@@ -1,4 +1,3 @@
-import { classList } from '@lbfalvy/react-utils';
 import React from 'react';
 import './Timespan.scss';
 
@@ -6,6 +5,6 @@ export const Timespan = ({ from, to, className }: {
   from?: string,
   to?: string,
   className?: string
-}): React.ReactElement => <address className={classList('Timespan', className)}>
-  {from ? `${from} - ` :null}{to ?? 'current'}
-</address>
+}): React.ReactElement => <address className={['Timespan', className].filter(Boolean).join(' ')}>
+    {from ? `${from} - ` : null}{to ?? 'current'}
+  </address>
